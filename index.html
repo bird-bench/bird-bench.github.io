@@ -27,30 +27,22 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <!-- <a class="navbar-brand" href="https://birdsql.github.io/index.html">Bird</a> -->
-      <!-- <a class="navbar-brand" href="./BIRD (1).png">Bird</a> -->
-      <img src="./img/bird_logo.png" id="logo-img"/>
-
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
-        Menu
-        <i class="fa fa-bars"></i>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Page Header -->
-  <header class="masthead" style="background-image: url(&#39;img/background.png&#39;)">
-    <div class="overlay"></div>
+  <header class="masthead" id="header-color">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1 id="bird-title">BIRD-SQL</h1>
-            <span class="subheading" id="caption">A Big Bench for Large-Scale Database Grounded Text-to-SQLs</span>
+        <div class="col-lg-10 col-md-12 mx-auto">
+          <div class="row site-heading flex-box">
+            <div class="col-lg-3">
+              <img id="logo-img" src="logo/bird_fig_main.png" alt="logo" />
+            </div>
+            <div class="col-lg-9">
+              <div class="align-middle">
+                <h1 id="bird-title">
+                  BIRD-SQL
+                </h1>
+                <span class="subheading" id="caption">A Big Bench for Large-Scale Database Grounded Text-to-SQLs</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -66,37 +58,50 @@
           <div class="list-group-item" id="introduction">
             <h4>About</h4>
             <p>
-              BIRD (<b>BI</b>g Bench for La<b>R</b>ge-scale <b>D</b>atabase Grounded Text-to-SQL Evaluation) represents a pioneering, cross-domain dataset that examines the impact of extensive database contents on text-to-SQL parsing.
-              The dataset includes three extra problems that especially resonates with real-world scenarios: 
-              <b>1)</b> the necessity to incorporate external knowledge into parsers; <b>2)</b> the need for parsers to reason over 'dirty' values; 
-              and <b>3)</b> the requirment to consider efficiency while executing SQLs. BIRD contains over <b>12,751</b> unique question-SQL pairs, <b>95</b> big databases with a total size of <b>33.4 GB</b>.
-              It also covers more than <b>37</b> professional domains, such as blockchain, hockey, healthcare and education, etc.
+              BIRD (<b>BI</b>g Bench for La<b>R</b>ge-scale <b>D</b>atabase Grounded Text-to-SQL Evaluation) represents
+              a pioneering, cross-domain dataset that examines the impact of extensive database contents on text-to-SQL
+              parsing.
+              The dataset includes three extra problems that especially resonates with real-world scenarios:
+              <b>1)</b> the necessity to incorporate external knowledge into parsers; <b>2)</b> the need for parsers to
+              reason over 'dirty' values;
+              and <b>3)</b> the requirment to consider efficiency while executing SQLs. BIRD contains over <b>12,751</b>
+              unique question-SQL pairs, <b>95</b> big databases with a total size of <b>33.4 GB</b>.
+              It also covers more than <b>37</b> professional domains, such as blockchain, hockey, healthcare and
+              education, etc.
             </p>
             <p class="text-center">
               <a href=""><button type="button" class="btn btn-info" id="paper">Paper</button></a>
             </p>
             <p class="text-center">
-              <a href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/bird"><button type="button" class="btn btn-info" id="paper">Code</button></a>
+              <a href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/bird"><button type="button"
+                  class="btn btn-info" id="paper">Code</button></a>
             </p>
             <p class="text-center">
-              <a href="https://bird-bench.github.io/"><button type="button" class="btn btn-success", id="code">Datasets (coming soon)</button></a>
+              <a href="https://bird-bench.github.io/"><button type="button" class="btn btn-success" , id="code">Datasets
+                  (coming soon)</button></a>
             </p>
           </div>
           <div class="list-group-item" id="illustration">
             <h4>Surprise from BIRD</h4>
             <p>
-              <b>1. Large and Dirty values:</b> Due to the nature of the real-world scenarios from which BIRD's database values were collected, they typically retain their original and frequently "dirty" format. Hence, text-to-SQL parsers must first analyze these values to account for their non-standard format before engaging in reasoning.
+              <b>1. Large and Dirty values:</b> Due to the nature of the real-world scenarios from which BIRD's database
+              values were collected, they typically retain their original and frequently "dirty" format. Hence,
+              text-to-SQL parsers must first analyze these values to account for their non-standard format before
+              engaging in reasoning.
             </p>
-            <img src="./img/dirty_1.png" id="dirty-img-1" style="margin:0 auto;"/>
-            <img src="./img/dirty_2.png" id="dirty-img-2" style="margin:0 auto;"/>
+            <img src="./img/dirty_1.png" class="column-img" id="dirty-img-1" style="margin:0 auto;" />
+            <img src="./img/dirty_2.png" class="column-img" id="dirty-img-2" style="margin:0 auto;" />
             <p>
-              <b>2. External Knowledge:</b> "account.type = 'OWNER'" can be inferred by the knowledge evidence: "The condition of the loans require the account type should be the owner."
+              <b>2. External Knowledge:</b> "account.type = 'OWNER'" can be inferred by the knowledge evidence: "The
+              condition of the loans require the account type should be the owner."
             </p>
-            <img src="./img/ex_kg_2.png" id="kg-img" style="margin:0 auto;"/>
+            <img src="./img/ex_kg_2.png" class="column-img" id="kg-img" style="margin:0 auto;" />
             <p>
-              <b>3. Text-to-Efficient-SQL:</b> BIRD is the first text-to-SQL benchmark designed to encourage semantic parsers to produce SQL queries that are not only correct but also efficient. This emphasis on efficiency is especially valuable in real-world data / business analysis circumstances.
+              <b>3. Text-to-Efficient-SQL:</b> BIRD is the first text-to-SQL benchmark designed to encourage semantic
+              parsers to produce SQL queries that are not only correct but also efficient. This emphasis on efficiency
+              is especially valuable in real-world data / business analysis circumstances.
             </p>
-            <img src="./img/efficient_sql.png" id="eff-img" style="margin:0 auto;"/>
+            <img src="./img/efficient_sql.png" class="column-img" id="eff-img" style="margin:0 auto;" />
           </div>
           <!-- <div class="list-group-item">
             <h4>Download Dataset</h4>
@@ -111,141 +116,20 @@
           </div>
           <div class="list-group-item">
             <h4>Citation</h4>
-            <pre>pre</pre>
+            <pre id="citation">
+@misc{li2023llm,
+  title={Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs},
+  author={Jinyang Li and Binyuan Hui and Ge Qu and Binhua Li and Jiaxi Yang and Bowen Li and Bailin Wang and Bowen Qin and Rongyu Cao and Ruiying Geng and Nan Huo and Chenhao Ma and Kevin C. C. Chang and Fei Huang and Reynold Cheng and Yongbin Li},
+  year={2023},
+  eprint={2305.03111},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
+}</pre>
           </div>
         </div>
       </div>
 
       <div class="col-lg-7">
-        <div class="card card-outline-secondary">
-          <div class="card-header">
-            Leaderboard - Execution Accuracy (EX) - Free Knowledge
-          </div>
-          <div class="card-body">
-            <table class="table">
-              <thead class="thead-light">
-                <tr>
-                  <th scope="col" rowspan="1"></th>
-                  <th scope="col" rowspan="1" class="align-middle text-center">Model</th>
-                  <th scope="col" rowspan="1" class="align-middle text-center">Code</th>
-                  <th scope="col" rowspan="1" class="align-middle text-center">Size</th>
-                  <th scope="col" rowspan="1" class="align-middle text-center">Tunable Params</th>
-                  <th scope="col" colspan="1" class="text-center">Dev (%)</th>
-                  <th scope="col" colspan="1" class="text-center">Test (%)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="table-success">
-                  <td scope="row" class="align-middle text-center"><br>
-                  </td>
-                  <td class="align-middle text-center">Human Performance<br>
-                    <span class="affiliation">Data Engineers + DB Students</span><br><a href=""
-                      class="paperlink"></a>
-                  </td>
-                  <td class="align-middle text-center"></td>
-                  <td class="align-middle text-center"></td>
-                  <td class="align-middle text-center"></td>
-                  <td class="align-middle text-center"></td>
-                  <td class="align-middle text-center"><b>72.37</b></td>
-                </tr>
-
-                <tr>
-                  <td scope="row" class="align-middle text-center">1<br>
-                    <span class="badge badge-secondary">Mar 17, 2023</span>
-                  </td>
-                  <td class="align-middle text-center">ChatGPT + COT<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
-                  </td>
-                  <td class="align-middle text-center"></td>
-                  <td class="align-middle text-center">UNK</td>
-                  <td class="align-middle text-center">0</td>
-                  <td class="align-middle text-center">25.88</td>
-                  <td class="align-middle text-center"><b>28.95</b></td>
-                </tr>
-
-                <!-- Copy from here -->
-                <tr>
-                  <td scope="row" class="align-middle text-center">2<br>
-                    <span class="badge badge-secondary">Mar 17, 2023</span>
-                  </td>
-                  <td class="align-middle text-center">ChatGPT (gpt-3.5-turbo)<br>
-                    <span class="affiliation">OpenAI</span><br><a href=""
-                      class="paperlink"></a>
-                  </td>
-                  <td class="align-middle text-center"></td>
-                  <td class="align-middle text-center">UNK</td>
-                  <td class="align-middle text-center">0</td>
-                  <td class="align-middle text-center">24.05</td>
-                  <td class="align-middle text-center">26.77</td>
-                </tr>
-
-                <!-- Copy from here -->
-                <tr>
-                  <td scope="row" class="align-middle text-center">3<br>
-                    <span class="badge badge-secondary">Feb 17, 2023</span>
-                  </td>
-                  <td class="align-middle text-center">Codex<br>
-                    <span class="affiliation">OpenAI</span><br><a href=""
-                      class="paperlink"></a>
-                  </td>
-                  <td class="align-middle text-center"></td>
-                  <td class="align-middle text-center">175B</td>
-                  <td class="align-middle text-center">0</td>
-                  <td class="align-middle text-center">25.42</td>
-                  <td class="align-middle text-center">24.86</td>
-                </tr>
-
-                <tr>
-                  <td scope="row" class="align-middle text-center">4<br>
-                    <span class="badge badge-secondary">Feb 5, 2023</span>
-                  </td>
-                  <td class="align-middle text-center">T5-3B<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
-                  </td>
-                  <td class="align-middle text-center"></td>
-                  <td class="align-middle text-center">3B</td>
-                  <td class="align-middle text-center">3B</td>
-                  <td class="align-middle text-center">10.37</td>
-                  <td class="align-middle text-center">11.17</td>
-                </tr>
-
-                <tr>
-                  <td scope="row" class="align-middle text-center">5<br>
-                    <span class="badge badge-secondary">Feb 3, 2023</span>
-                  </td>
-                  <td class="align-middle text-center">T5-Large<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
-                  </td>
-                  <td class="align-middle text-center"></td>
-                  <td class="align-middle text-center">770M</td>
-                  <td class="align-middle text-center">770M</td>
-                  <td class="align-middle text-center">9.71</td>
-                  <td class="align-middle text-center">10.38</td>
-                </tr>
-
-                <tr>
-                  <td scope="row" class="align-middle text-center">6<br>
-                    <span class="badge badge-secondary">Feb 3, 2023</span>
-                  </td>
-                  <td class="align-middle text-center">T5-Base<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
-                  </td>
-                  <td class="align-middle text-center"></td>
-                  <td class="align-middle text-center">220M</td>
-                  <td class="align-middle text-center">220M</td>
-                  <td class="align-middle text-center">6.32</td>
-                  <td class="align-middle text-center">7.06</td>
-                </tr>
-                <!-- ...... Till here -->
-
-              </tbody>
-            </table>
-          </div>
-        </div>
 
         <div class="card card-outline-secondary">
           <div class="card-header">
@@ -269,8 +153,7 @@
                   <td scope="row" class="align-middle text-center"><br>
                   </td>
                   <td class="align-middle text-center">Human Performance<br>
-                    <span class="affiliation">Data Engineers + DB Students</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Data Engineers + DB Students</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center"></td>
@@ -284,8 +167,7 @@
                     <span class="badge badge-secondary">Mar 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">ChatGPT + COT<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">UNK</td>
@@ -299,8 +181,7 @@
                     <span class="badge badge-secondary">Mar 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">ChatGPT (gpt-3.5-turbo)<br>
-                    <span class="affiliation">OpenAI</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">OpenAI</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">UNK</td>
@@ -314,8 +195,7 @@
                     <span class="badge badge-secondary">Feb 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">Codex<br>
-                    <span class="affiliation">OpenAI</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">OpenAI</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">175B</td>
@@ -329,8 +209,7 @@
                     <span class="badge badge-secondary">Feb 5, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-3B<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">3B</td>
@@ -344,8 +223,7 @@
                     <span class="badge badge-secondary">Feb 3, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-Large<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">770M</td>
@@ -359,8 +237,7 @@
                     <span class="badge badge-secondary">Feb 3, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-Base<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">220M</td>
@@ -377,7 +254,7 @@
 
         <div class="card card-outline-secondary">
           <div class="card-header">
-            Leaderboard - Valid Efficiency Score (VES) - Free Knowledge
+            Leaderboard - Execution Accuracy (EX) - Free Knowledge
           </div>
           <div class="card-body">
             <table class="table">
@@ -388,8 +265,8 @@
                   <th scope="col" rowspan="1" class="align-middle text-center">Code</th>
                   <th scope="col" rowspan="1" class="align-middle text-center">Size</th>
                   <th scope="col" rowspan="1" class="align-middle text-center">Tunable Params</th>
-                  <th scope="col" colspan="1" class="text-center">Dev</th>
-                  <th scope="col" colspan="1" class="text-center">Test</th>
+                  <th scope="col" colspan="1" class="text-center">Dev (%)</th>
+                  <th scope="col" colspan="1" class="text-center">Test (%)</th>
                 </tr>
               </thead>
               <tbody>
@@ -397,14 +274,13 @@
                   <td scope="row" class="align-middle text-center"><br>
                   </td>
                   <td class="align-middle text-center">Human Performance<br>
-                    <span class="affiliation">Data Engineers + DB Students</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Data Engineers + DB Students</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center"></td>
-                  <td class="align-middle text-center"><b>70.36</b></td>
+                  <td class="align-middle text-center"><b>72.37</b></td>
                 </tr>
 
                 <tr>
@@ -412,44 +288,43 @@
                     <span class="badge badge-secondary">Mar 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">ChatGPT + COT<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">UNK</td>
                   <td class="align-middle text-center">0</td>
-                  <td class="align-middle text-center">32.33</td>
-                  <td class="align-middle text-center"><b>49.69</b></td>
+                  <td class="align-middle text-center">25.88</td>
+                  <td class="align-middle text-center"><b>28.95</b></td>
                 </tr>
 
+                <!-- Copy from here -->
                 <tr>
                   <td scope="row" class="align-middle text-center">2<br>
                     <span class="badge badge-secondary">Mar 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">ChatGPT (gpt-3.5-turbo)<br>
-                    <span class="affiliation">OpenAI</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">OpenAI</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">UNK</td>
                   <td class="align-middle text-center">0</td>
-                  <td class="align-middle text-center">27.97</td>
-                  <td class="align-middle text-center">36.68</td>
+                  <td class="align-middle text-center">24.05</td>
+                  <td class="align-middle text-center">26.77</td>
                 </tr>
 
+                <!-- Copy from here -->
                 <tr>
                   <td scope="row" class="align-middle text-center">3<br>
                     <span class="badge badge-secondary">Feb 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">Codex<br>
-                    <span class="affiliation">OpenAI</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">OpenAI</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">175B</td>
                   <td class="align-middle text-center">0</td>
-                  <td class="align-middle text-center">33.37</td>
-                  <td class="align-middle text-center">35.40</td>
+                  <td class="align-middle text-center">25.42</td>
+                  <td class="align-middle text-center">24.86</td>
                 </tr>
 
                 <tr>
@@ -457,14 +332,13 @@
                     <span class="badge badge-secondary">Feb 5, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-3B<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">3B</td>
                   <td class="align-middle text-center">3B</td>
-                  <td class="align-middle text-center">13.62</td>
-                  <td class="align-middle text-center">15.17</td>
+                  <td class="align-middle text-center">10.37</td>
+                  <td class="align-middle text-center">11.17</td>
                 </tr>
 
                 <tr>
@@ -472,14 +346,13 @@
                     <span class="badge badge-secondary">Feb 3, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-Large<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">770M</td>
                   <td class="align-middle text-center">770M</td>
-                  <td class="align-middle text-center">9.90</td>
-                  <td class="align-middle text-center">12.25</td>
+                  <td class="align-middle text-center">9.71</td>
+                  <td class="align-middle text-center">10.38</td>
                 </tr>
 
                 <tr>
@@ -487,22 +360,22 @@
                     <span class="badge badge-secondary">Feb 3, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-Base<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">220M</td>
                   <td class="align-middle text-center">220M</td>
-                  <td class="align-middle text-center">7.78</td>
-                  <td class="align-middle text-center">8.97</td>
+                  <td class="align-middle text-center">6.32</td>
+                  <td class="align-middle text-center">7.06</td>
                 </tr>
-
                 <!-- ...... Till here -->
 
               </tbody>
             </table>
           </div>
         </div>
+
+
         <div class="card card-outline-secondary">
           <div class="card-header">
             Leaderboard - Valid Efficiency Score (VES) - Oracle Knowledge
@@ -525,8 +398,7 @@
                   <td scope="row" class="align-middle text-center"><br>
                   </td>
                   <td class="align-middle text-center">Human Performance<br>
-                    <span class="affiliation">Data Engineers + DB Students</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Data Engineers + DB Students</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center"></td>
@@ -540,8 +412,7 @@
                     <span class="badge badge-secondary">Mar 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">ChatGPT + COT<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">UNK</td>
@@ -555,8 +426,7 @@
                     <span class="badge badge-secondary">Mar 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">ChatGPT (gpt-3.5-turbo)<br>
-                    <span class="affiliation">OpenAI</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">OpenAI</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">UNK</td>
@@ -570,8 +440,7 @@
                     <span class="badge badge-secondary">Feb 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">Codex<br>
-                    <span class="affiliation">OpenAI</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">OpenAI</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">175B</td>
@@ -585,8 +454,7 @@
                     <span class="badge badge-secondary">Feb 5, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-3B<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">3B</td>
@@ -600,8 +468,7 @@
                     <span class="badge badge-secondary">Feb 3, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-Large<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">770M</td>
@@ -615,8 +482,7 @@
                     <span class="badge badge-secondary">Feb 3, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-Base<br>
-                    <span class="affiliation">Google</span><br><a href=""
-                      class="paperlink"></a>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center">220M</td>
@@ -630,13 +496,135 @@
             </table>
           </div>
         </div>
+        <div class="card card-outline-secondary">
+          <div class="card-header">
+            Leaderboard - Valid Efficiency Score (VES) - Free Knowledge
+          </div>
+          <div class="card-body">
+            <table class="table">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col" rowspan="1"></th>
+                  <th scope="col" rowspan="1" class="align-middle text-center">Model</th>
+                  <th scope="col" rowspan="1" class="align-middle text-center">Code</th>
+                  <th scope="col" rowspan="1" class="align-middle text-center">Size</th>
+                  <th scope="col" rowspan="1" class="align-middle text-center">Tunable Params</th>
+                  <th scope="col" colspan="1" class="text-center">Dev</th>
+                  <th scope="col" colspan="1" class="text-center">Test</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-success">
+                  <td scope="row" class="align-middle text-center"><br>
+                  </td>
+                  <td class="align-middle text-center">Human Performance<br>
+                    <span class="affiliation">Data Engineers + DB Students</span><br><a href="" class="paperlink"></a>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center"><b>70.36</b></td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center">1<br>
+                    <span class="badge badge-secondary">Mar 17, 2023</span>
+                  </td>
+                  <td class="align-middle text-center">ChatGPT + COT<br>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">UNK</td>
+                  <td class="align-middle text-center">0</td>
+                  <td class="align-middle text-center">32.33</td>
+                  <td class="align-middle text-center"><b>49.69</b></td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center">2<br>
+                    <span class="badge badge-secondary">Mar 17, 2023</span>
+                  </td>
+                  <td class="align-middle text-center">ChatGPT (gpt-3.5-turbo)<br>
+                    <span class="affiliation">OpenAI</span><br><a href="" class="paperlink"></a>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">UNK</td>
+                  <td class="align-middle text-center">0</td>
+                  <td class="align-middle text-center">27.97</td>
+                  <td class="align-middle text-center">36.68</td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center">3<br>
+                    <span class="badge badge-secondary">Feb 17, 2023</span>
+                  </td>
+                  <td class="align-middle text-center">Codex<br>
+                    <span class="affiliation">OpenAI</span><br><a href="" class="paperlink"></a>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">175B</td>
+                  <td class="align-middle text-center">0</td>
+                  <td class="align-middle text-center">33.37</td>
+                  <td class="align-middle text-center">35.40</td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center">4<br>
+                    <span class="badge badge-secondary">Feb 5, 2023</span>
+                  </td>
+                  <td class="align-middle text-center">T5-3B<br>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">3B</td>
+                  <td class="align-middle text-center">3B</td>
+                  <td class="align-middle text-center">13.62</td>
+                  <td class="align-middle text-center">15.17</td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center">5<br>
+                    <span class="badge badge-secondary">Feb 3, 2023</span>
+                  </td>
+                  <td class="align-middle text-center">T5-Large<br>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">770M</td>
+                  <td class="align-middle text-center">770M</td>
+                  <td class="align-middle text-center">9.90</td>
+                  <td class="align-middle text-center">12.25</td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center">6<br>
+                    <span class="badge badge-secondary">Feb 3, 2023</span>
+                  </td>
+                  <td class="align-middle text-center">T5-Base<br>
+                    <span class="affiliation">Google</span><br><a href="" class="paperlink"></a>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">220M</td>
+                  <td class="align-middle text-center">220M</td>
+                  <td class="align-middle text-center">7.78</td>
+                  <td class="align-middle text-center">8.97</td>
+                </tr>
+
+                <!-- ...... Till here -->
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
       </div>
 
 
     </div>
 
     <hr>
-    
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="./js/jquery.min.js"></script>

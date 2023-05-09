@@ -8,6 +8,11 @@ header.masthead .site-heading {
     font-size: 14px;
 }
 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
 #main h1,
 #main h2,
 #main h3,
@@ -149,47 +154,64 @@ span.line {
 }
 
 #logo-img {
-    display: block;
-    /* max-height: 100%; */
-    height: 95px;
+    display: inline;
+    max-height: 200px;
 }
 
-#caption{
+#caption {
     font-size: 20px;
     font-family: Helvetica, sans-serif;
 }
 
-#introduction{
+#introduction {
     font-size: 15px;
     font-family: sans-serif;
 }
 
-#paper{
+#paper {
     background-color: #34314c;
     border-color: #34314c;
 }
 
-#kg-img{
-    width: 280px;
+.column-img {
+    max-width: 100%;
 }
 
-#dirty-img-1{
-    width: 420px;
-}
-
-#dirty-img-2{
-    width: 220px;
-    text-align: center;
-}
-
-#eff-img{
-    width: 400px;
-}
-
-#illustration{
+#illustration {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#code{
+#code {
     background-color: #1F7872;
+}
+
+
+#citation {
+    font-size: 0.75em;
+    overflow: auto;
+    border: 1px solid #999;
+    margin: 0 4px;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+.flex-box {
+
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 100%;
+    padding: 15px;
+}
+
+.flex-box>div {
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#header-color {
+    /* background-color: #7C499D; */
+    background-color: #53595F;
 }
