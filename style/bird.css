@@ -1,7 +1,7 @@
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-    padding: 100px 0 75px;
+    padding: 50px 0 75px;
 }
 
 #main {
@@ -21,14 +21,6 @@ body {
 #main h6 {
     font-weight: 600;
     margin: 5px 0;
-}
-
-#main button {
-    text-transform: none;
-    padding: 8px 12px;
-    font-weight: 300;
-    width: 80%;
-    min-width: 230px;
 }
 
 a {
@@ -156,6 +148,12 @@ span.line {
 #logo-img {
     display: inline;
     max-height: 200px;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+#logo-img:hover{
+    transform: scale(1.4);
 }
 
 #caption {
@@ -181,8 +179,9 @@ span.line {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#code {
+.dataset-btn {
     background-color: #1F7872;
+    min-width: 50% !important;
 }
 
 
@@ -214,4 +213,45 @@ span.line {
 #header-color {
     /* background-color: #7C499D; */
     background-color: #53595F;
+}
+
+
+#button-group {
+    width: 100%;
+}
+
+.button-row {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.btn-a {
+    color: #fff;
+    font-weight: 400;
+    width: 100%;
+    text-transform: none;
+    background-color: #34314c;
+}
+
+.btn-b {
+    color: #fff;
+    font-weight: 400;
+    width: 100%;
+    text-transform: none;
+    background-color: #1F7872;
+}
+
+#button-row-b {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-b {
+    width: calc(50% - 5px);
+}
+
+.btn {
+    padding: 8px;
 }

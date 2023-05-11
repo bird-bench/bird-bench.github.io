@@ -183,6 +183,7 @@ img::-moz-selection {
     }
 }
 
+
 header.masthead {
     margin-bottom: 50px;
     background: no-repeat center center;
@@ -192,7 +193,7 @@ header.masthead {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover
+    background-size: cover;
 }
 
 header.masthead .overlay {
