@@ -102,6 +102,51 @@
               </div>
             </div>
           </div>
+          <style>  
+            .scroll-container {  
+              position: relative;
+              width: 100%;  
+              max-height: 300px;  
+              overflow-y: scroll;  
+            }  
+            
+            .scroll-container::-webkit-scrollbar {  
+              width: 10px;  
+            }  
+            
+            .scroll-container::-webkit-scrollbar-thumb {  
+              background-color: #888;  
+              border-radius: 5px;  
+            }  
+            
+            .scroll-container::-webkit-scrollbar-thumb:hover {  
+              background-color: #555;  
+            }  
+          </style>
+          
+          <div class="list-group-item" id="news">
+            <h4>News</h4>
+            
+            <div class="scroll-container">  
+              <div class="card card-outline-secondary mb-4" style="text-align: left;">  
+                  <!-- <div class="card-header">  
+                        News  
+                      </div>    -->
+                    
+                  <div class="card-body" style="background-color: #F1F6F9;">  
+                      <ul style="padding-left: 0;">  
+                          <li style="list-style-type: none;"><span style="background-color: #22A699; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #FFE7CE">July 17, 2023:</strong></span> We update newest results of GPT-4, Claude-2 and Palm-2. Additionally, we have some Azure OpenAI API quotas for free LLM-based test now. </li>  
+                          <li style="list-style-type: none;"><span style="background-color: #22A699; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #FFE7CE">July 14, 2023:</strong></span> The data link has been updated, fixing the schema names in the CSV files. Additionally, tied results caused by <code>order_by limit 1</code> are now considered. Both SQL queries - with and without accounting for tied results -  
+                              are valid at this time.</li>
+                          <li style="list-style-type: none;"><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #F6F1F1">Jun 12, 2023:</strong></span> We are welcome to any suggestions and reported gold errors in <a href="https://github.com/AlibabaResearch/DAMO-ConvAI/issues/39">help_wanted</a>. Any of your help is appreciated!</li>
+                          <li style="list-style-type: none;"><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #F6F1F1">Jun 5, 2023:</strong></span> We open-sourced our <a href="https://arxiv.org/abs/2301.07507">Graphix-T5</a>, a graph-aware semi-pretrained text-to-text PLM specifically designed to improve multi-hop reasoning for the complex text-to-SQL task.  
+                          <li style="list-style-type: none;"><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #F6F1F1">May 30, 2023:</strong></span> If you are interested in ICL, please check out our interesting work <a href="https://arxiv.org/pdf/2305.13016.pdf">deep-thinking🤔.</a> Generate 1000 models for 1000 people smoothly!  
+                          </li>  
+                      </ul>  
+                  </div>  
+              </div>  
+            </div>
+          </div>
           <div class="list-group-item" id="illustration">
             <h4>Surprise from BIRD</h4>
             <p>
@@ -131,46 +176,7 @@
               <a href="https://bird-bench.github.io/"><button type="button" class="btn btn-success", id="code">BIRD Code Nest</button></a>
             </p>
           </div> -->
-          <style>  
-            .scroll-container {  
-              position: relative;  
-              width: 100%;  
-              max-height: 200px;  
-              overflow-y: scroll;  
-            }  
-            
-            .scroll-container::-webkit-scrollbar {  
-              width: 10px;  
-            }  
-            
-            .scroll-container::-webkit-scrollbar-thumb {  
-              background-color: #888;  
-              border-radius: 5px;  
-            }  
-            
-            .scroll-container::-webkit-scrollbar-thumb:hover {  
-              background-color: #555;  
-            }  
-          </style>
           <div class="list-group-item">
-            <h4>News</h4>
-            <div class="scroll-container">  
-              <div class="card card-outline-secondary mb-4" style="text-align: left;">  
-                <!-- <div class="card-header">  
-                  News  
-                </div>   -->
-                <div class="card-body" style="background-color: #F1F6F9;">  
-                  <ul>  
-                    <li><span style="background-color: #22A699; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #FFE7CE">July 17, 2023:</strong></span> We update newest result of GPT-4, Claude-2 and Palm-2. Additionally, we have some Azure OpenAI API keys for test evaluation for free now. </li>
-                    <li><span style="background-color: #22A699; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #FFE7CE">July 14, 2023:</strong></span> The data link has been updated, fixing the schema names in the CSV files. Additionally, tied results caused by <code>order_by limit 1</code> are now considered. Both SQL queries - with and without accounting for tied results - 
-                      are valid at this time.
-                      <li><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #F6F1F1">Jun 5, 2023:</strong></span> We open-sourced our <a href="https://arxiv.org/abs/2301.07507">Graphix-T5</a>, a graph-aware semi-pretrained text-to-text PLM specifically designed to improve multi-hop reasoning for the complex text-to-SQL task.
-                    <li><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #F6F1F1">May 30, 2023:</strong></span> If your are interested in ICL, please check out our interesting work <a href="https://arxiv.org/pdf/2305.13016.pdf">deep-thinking🤔.</a> Generate 1000 models for 1000 people smoothly!
-                    </li> 
-                  </ul>  
-                </div>  
-              </div>    
-            </div>
             <h4>Submission</h4>
             <p>If your code scripts don't need complex environment setting up and can fetch results via openai-api
               mainly. Please connect <code>bird.bench23@gmail.com</code> for fast test. Currently, we have several free quota from Azure OpenAI for GPT-4, GPT-4-32k, GPT-turbo supported by HKU ITS.
