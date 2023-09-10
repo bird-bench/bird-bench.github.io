@@ -200,7 +200,7 @@
                 <input type="email" id="email" name="email" placeholder="Email address" required>  
                 <button type="submit">Subscribe</button>  
             </form>  
-              
+            <p id="message"></p>  
           </div> 
           
           <head>  
@@ -221,7 +221,7 @@
                   })  
                   .then(response => response.text())  
                   .then(text => {  
-                    document.getElementById("message").innerHTML = text;  
+                    document.getElementById("message").innerHTML = "<i>Subscribe Successfully! Thanks for your attention!</i>";  
                   })  
                   .catch(error => {  
                     console.error("Error:", error);  
