@@ -240,6 +240,7 @@ span.line {
     width: 100%;
     text-transform: none;
     background-color: #1F7872;
+    border-radius: 50px; 
 }
 
 #button-row-b {
@@ -251,6 +252,17 @@ span.line {
 .button-b {
     width: calc(50% - 5px);
 }
+
+.btn-round {  
+  width: calc(50% - 5px);  
+  height: calc(50% - 5px); /* Add height property with the same value as width */  
+  transition: background-color 0.3s; /* Add a smooth transition effect */  
+}  
+
+
+.btn-b:hover {  
+background-color: #CD6688; /* Change the background color when the cursor is over the button */  
+}  
 
 .btn {
     padding: 8px;
