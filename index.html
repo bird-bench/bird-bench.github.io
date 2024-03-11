@@ -18,7 +18,6 @@
   <link href="./style/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="./style/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link href="./style/css" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
   <link href="./style/clean-blog.min.css" rel="stylesheet">
@@ -61,7 +60,10 @@
       <div class="col-lg-5">
         <div class="list-group">
           <div class="list-group-item" id="introduction">
+            <!-- <div style="display: grid; grid-template-columns: auto auto; align-items: center;"> -->
             <h4>About BIRD</h4>
+            <img src="https://badges.toozhao.com/badges/01HFXP6JKNBG5AW3Y5B95DK568/blue.svg" />
+            <!-- </div> -->
             <p>
               BIRD (<b>BI</b>g Bench for La<b>R</b>ge-scale <b>D</b>atabase Grounded Text-to-SQL Evaluation) represents
               a pioneering, cross-domain dataset that examines the impact of extensive database contents on text-to-SQL
@@ -137,16 +139,12 @@
             <h4>News</h4>
             
             <div class="scroll-container">  
-              <div class="card card-outline-secondary mb-4" style="text-align: left;">  
-                  <!-- <div class="card-header">  
-                        News  
-                      </div>    -->
-                    
+              <div class="card card-outline-secondary mb-4" style="text-align: left;">                      
                   <div class="card-body" style="background-color: #F1F6F9;">  
                       <ul style="padding-left: 0;">
                           <li style="list-style-type: none;"><span style="background-color: #22A699; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #FFE7CE">Sept 25, 2023:</strong></span> We have released a cleaner version of <code>dev set</code>. Please download dev set again. We checked all cases of dev set and fixed all errors that we found. After cleaning, the ChatGPT (gpt-3.5-turbo) and GPT4 (gpt-4-32k) EX scores have improved to <strong>42.24</strong> (from 37.22) and <strong>49.15</strong> (from 46.35), respectively. Thanks for all feedbacks!</li>
                           <li style="list-style-type: none;"><span style="background-color: #22A699; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #FFE7CE">Sept 21, 2023:</strong></span> Our paper has been accepted by <code><strong>NeurIPS 2023</strong></code> as a <code><strong>Spotlight</strong></code>!!! Thanks for all the efforts and suggestions of co-authors, anonymous reviewers, awesome researchers/users in github or emails.</li> 
-                          <li style="list-style-type: none;"><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #F6F1F1">July 17, 2023:</strong></span> We update newest results of GPT-4, Claude-2 and Palm-2. Additionally, we have some Azure OpenAI API quotas for free LLM-based test now. </li>  
+                          <li style="list-style-type: none;"><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #F6F1F1">July 17, 2023:</strong></span> We update newest results of GPT-4, Claude-2 and Palm-2. </li>  
                           <li style="list-style-type: none;"><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #F6F1F1">July 14, 2023:</strong></span> The data link has been updated, fixing the schema names in the CSV files. Additionally, tied results caused by <code>order_by limit 1</code> are now considered. Both SQL queries - with and without accounting for tied results -  
                               are valid at this time.</li>
                           <li style="list-style-type: none;"><span style="background-color: #4F709C; color: white; padding: 2px 4px; border-radius: 5px;"><strong style="color: #F6F1F1">Jun 12, 2023:</strong></span> We are welcome to any suggestions and reported gold errors in <a href="https://github.com/AlibabaResearch/DAMO-ConvAI/issues/39">help_wanted</a>. Any of your help is appreciated!</li>
@@ -189,7 +187,7 @@
           </div> -->
           <div class="list-group-item">
             <h4>Submission</h4>
-            <p>Please follow the Submission Guideline (below) and contact <code>bird.bench23@gmail.com</code> for test evaluation. Ususally, we will return your results in 10 days! Currently, we have several free quotas from Azure OpenAI for GPT-4, GPT-4-32k, GPT-turbo supported by HKU ITS.
+            <p>Please follow the Submission Guideline (below) and contact <code>bird.bench23@gmail.com</code> for test evaluation. Ususally, we will return your results in 10 days!
              
             </p>
             <style>  
@@ -248,7 +246,7 @@
           </head>   
           <div class="list-group-item">
             <h4>Citation</h4>
-            <pre id="citation">
+            <!-- <pre id="citation">
 @misc{li2023llm,
   title={Can LLM Already Serve as A Database Interface? A BIg Bench for Large-Scale Database Grounded Text-to-SQLs},
   author={Jinyang Li and Binyuan Hui and Ge Qu and Binhua Li and Jiaxi Yang and Bowen Li and Bailin Wang and Bowen Qin and Rongyu Cao and Ruiying Geng and Nan Huo and Chenhao Ma and Kevin C. C. Chang and Fei Huang and Reynold Cheng and Yongbin Li},
@@ -256,6 +254,14 @@
   eprint={2305.03111},
   archivePrefix={arXiv},
   primaryClass={cs.CL}
+}</pre> -->
+            <pre id="citation">
+@article{li2024can,
+  title={Can llm already serve as a database interface? a big bench for large-scale database grounded text-to-sqls},
+  author={Li, Jinyang and Hui, Binyuan and Qu, Ge and Yang, Jiaxi and Li, Binhua and Li, Bowen and Wang, Bailin and Qin, Bowen and Geng, Ruiying and Huo, Nan and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
 }</pre>
           </div>
         </div>
@@ -267,15 +273,15 @@
           <div class="card-header">
             Leaderboard - Execution Accuracy (EX)
           </div>
-          <div class="card-body">
-            <table class="table">
+          <div class="table-wrapper">
+            <table class="table" id="ex-table">
               <thead class="thead-light">
                 <tr>
                   <th scope="col" rowspan="1"></th>
                   <th scope="col" rowspan="1" class="align-middle text-center">Model</th>
                   <th scope="col" rowspan="1" class="align-middle text-center">Code</th>
                   <th scope="col" rowspan="1" class="align-middle text-center">Size</th>
-                  <th scope="col" rowspan="1" class="align-middle text-center">Orale Knowledge</th>
+                  <th scope="col" rowspan="1" class="align-middle text-center">Oracle Knowledge</th>
                   <th scope="col" colspan="1" class="text-center">Dev (%)</th>
                   <th scope="col" colspan="1" class="text-center">Test (%)</th>
                 </tr>
@@ -306,29 +312,120 @@
                   <td class="align-middle text-center"></td>
                   <td class="align-middle text-center"><b>72.37</b></td>
                 </tr> -->
-                
+
                 <tr>
-                  <td scope="row" class="align-middle text-center">🏆1<br>
-                    <span class="badge badge-secondary">Oct 12, 2023</span>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Jan 14, 2024</span>
                   </td>
-                  <td class="align-middle text-center">SFT CodeS-15B<br>
-                    <span class="affiliation">Anonymous</span><br><a href="" class="paperlink"></a>
+                  <td class="align-middle text-center">MCS-SQL + GPT-4<br>
+                    <span class="affiliation">Dunamu</span>
                   </td>
                   <td class="align-middle text-center"></td>
-                  <td class="align-middle text-center">15B</td>
+                  <td class="align-middle text-center">UNK</td>
                   <td class="align-middle text-center">✔️</td>
-                  <td class="align-middle text-center">58.47</td>
-                  <td class="align-middle text-center"><b>60.37</b></td>
+                  <td class="align-middle text-center">63.36</td>
+                  <td class="align-middle text-center"><b>65.45</b></td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Feb 27, 2024</span>
+                  </td>
+                  <td class="align-middle text-center">PB-SQL, v1<br>
+                    <span class="affiliation">Seoul National University</span>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">UNK</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">60.50</td>
+                  <td class="align-middle text-center">64.84</td>
+                </tr>
+
+                <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Feb 21, 2024</span>
+                    </td>
+                    <td class="align-middle text-center">
+                        <span style="font-variant-caps: small-caps;">Sense</span><br>
+                        <span class="affiliation">Anonymous</span>
+                    </td>
+                    <td class="align-middle text-center"></td>
+                    <td class="align-middle text-center">13B</td>
+                    <td class="align-middle text-center">✔️</td>	
+                    <td class="align-middle text-center">55.48</td>
+                    <td class="align-middle text-center">63.39</td>
+                  </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Nov 16, 2023</span>
+                  </td>
+                  <td class="align-middle text-center">Dubo-SQL, v1<br>
+                    <span class="affiliation">Mercator Technologies</span>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">UNK</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">59.71</td>
+                  <td class="align-middle text-center">60.71</td>
                 </tr>
                 
                 <tr>
-                  <td scope="row" class="align-middle text-center">🥈2<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Oct 12, 2023</span>
+                  </td>
+                  <td class="align-middle text-center">SFT CodeS-15B<br>
+                    <span class="affiliation">Renmin University of China</span><br><a href="https://arxiv.org/abs/2402.16347" class="paperlink">[Li et al. SIGMOD'24]</a>
+                  </td>
+                  <td class="align-middle text-center">
+                    <a href="https://github.com/RUCKBReasoning/codes">[link]</a>
+                  </td>
+                  <td class="align-middle text-center">15B</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">58.47</td>
+                  <td class="align-middle text-center">60.37</td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Feb 27, 2024</span>
+                  </td>
+                  <td class="align-middle text-center">DTS-SQL + DeepSeek 7B<br>
+                    <span class="affiliation">University of Alberta</span><br><a href="https://arxiv.org/abs/2402.01117" class="paperlink">[Pourreza et al. '24]</a>
+                  </td>
+                   <td class="align-middle text-center">
+                    <a href="https://github.com/MohammadrezaPourreza/DTS-SQL">[link]</a>
+                  </td>
+                  <td class="align-middle text-center">7B</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">55.8</td>
+                  <td class="align-middle text-center">60.31</td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Nov 21, 2023</span>
+                  </td>
+                  <td class="align-middle text-center">MAC-SQL + GPT-4<br>
+                    <span class="affiliation">BUAA & Tencent</span><br><a href="https://arxiv.org/abs/2312.11242" class="paperlink">[Wang et al. '23]</a>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">UNK</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">57.56</td>
+                  <td class="align-middle text-center">59.59</td>
+                </tr>
+                
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Oct 12, 2023</span>
                   </td>
                   <td class="align-middle text-center">SFT CodeS-7B<br>
-                    <span class="affiliation">Anonymous</span><br><a href="" class="paperlink"></a>
+                    <span class="affiliation">Renmin University of China</span><br><a href="https://arxiv.org/abs/2402.16347" class="paperlink">[Li et al. SIGMOD'24]</a>
                   </td>
-                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">
+                    <a href="https://github.com/RUCKBReasoning/codes">[link]</a>
+                  </td>
                   <td class="align-middle text-center">7B</td>
                   <td class="align-middle text-center">✔️</td>
                   <td class="align-middle text-center">57.17</td>
@@ -336,12 +433,12 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">🥉3<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Nov 09, 2023</span>
                   </td>
                   <td class="align-middle text-center">DAIL-SQL + GPT-4<br>
                     <span class="affiliation">Alibaba Group</span><br><a href="https://arxiv.org/abs/2308.15363"
-                      class="paperlink">[Gao and Wang et al. 2023]</a>
+                      class="paperlink">[Gao and Wang et al. '23]</a>
                   </td>
                   <td class="align-middle text-center">
                     <a href="https://github.com/BeachWang/DAIL-SQL">[link]</a>
@@ -353,12 +450,12 @@
                 </tr>
                 
                 <tr>
-                  <td scope="row" class="align-middle text-center">4<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Aug 15, 2023</span>
                   </td>
                   <td class="align-middle text-center">DIN-SQL + GPT-4<br>
                     <span class="affiliation">University of Alberta</span><br><a href="https://arxiv.org/abs/2304.11015"
-                      class="paperlink">[Pourreza et al. 2023]</a>
+                      class="paperlink">[Pourreza et al. '23]</a>
                   </td>
                   <td class="align-middle text-center">
                     <a href="https://github.com/MohammadrezaPourreza/Few-shot-NL2SQL-with-prompting">[link]</a>
@@ -370,7 +467,7 @@
                 </tr>
                 
                 <tr>
-                  <td scope="row" class="align-middle text-center">5<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Jul 01, 2023</span>
                   </td>
                   <td class="align-middle text-center">GPT-4<br>
@@ -386,7 +483,7 @@
                 </tr>
                 
                 <tr>
-                  <td scope="row" class="align-middle text-center">6<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Jul 16, 2023</span>
                   </td>
                   <td class="align-middle text-center">Claude-2<br>
@@ -402,12 +499,26 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">7<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Nov 23, 2023</span>
+                  </td>
+                  <td class="align-middle text-center">Open-SQL<br>
+                    <span class="affiliation">Anonymous</span><br><a href="" class="paperlink"></a>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">7B</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">37.68</td>
+                  <td class="align-middle text-center">47.74</td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Mar 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">ChatGPT + CoT<br>
-                    <span class="affiliation">HKU & DAMO</span><br><a href="https://arxiv.org/abs/2305.03111"
-                      class="paperlink">[Li et al. 2023]</a>
+                    <span class="affiliation">HKU & DAMO</span><br>
+                    <a href="https://arxiv.org/abs/2305.03111" class="paperlink">[Li et al. NeurIPS'23]</a>
                   </td>
                   <td class="align-middle text-center">
                     <a href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/bird">[link]</a>
@@ -419,7 +530,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">8<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Mar 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">ChatGPT<br>
@@ -433,7 +544,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">9<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">Codex<br>
@@ -447,7 +558,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">10<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Jul 16, 2023</span>
                   </td>
                   <td class="align-middle text-center">Palm-2<br>
@@ -463,12 +574,12 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">11<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Mar 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">ChatGPT + CoT<br>
                     <span class="affiliation">HKU & DAMO</span><br><a href="https://arxiv.org/abs/2305.03111"
-                      class="paperlink">[Li et al. 2023]</a>
+                      class="paperlink">[Li et al. NeurIPS'23]</a>
                   </td>
                   <td class="align-middle text-center">
                     <a href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/bird">[link]</a>
@@ -481,7 +592,7 @@
 
                 <!-- Copy from here -->
                 <tr>
-                  <td scope="row" class="align-middle text-center">12<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Mar 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">ChatGPT<br>
@@ -496,7 +607,7 @@
 
                 <!-- Copy from here -->
                 <tr>
-                  <td scope="row" class="align-middle text-center">13<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">Codex<br>
@@ -511,7 +622,7 @@
 
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">14<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 5, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-3B<br>
@@ -525,7 +636,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">15<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 3, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-Large<br>
@@ -539,7 +650,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">16<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 3, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-Base<br>
@@ -553,7 +664,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">17<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 5, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-3B<br>
@@ -567,7 +678,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">18<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 3, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-Large<br>
@@ -581,7 +692,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">19<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 3, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-Base<br>
@@ -604,8 +715,8 @@
           <div class="card-header">
             Leaderboard - Valid Efficiency Score (VES)
           </div>
-          <div class="card-body">
-            <table class="table">
+          <div class="table-wrapper">
+            <table class="table" id="ves-table">
               <thead class="thead-light">
                 <tr>
                   <th scope="col" rowspan="1"></th>
@@ -632,27 +743,89 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">🏆1<br>
-                    <span class="badge badge-secondary">Oct 12, 2023</span>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Jan 14, 2024</span>
                   </td>
-                  <td class="align-middle text-center">SFT CodeS-15B<br>
-                    <span class="affiliation">Anonymous</span><br><a href="" class="paperlink"></a>
+                  <td class="align-middle text-center">MCS-SQL + GPT-4<br>
+                    <span class="affiliation">Dunamu</span><br><a href="" class="paperlink"></a>
                   </td>
                   <td class="align-middle text-center"></td>
-                  <td class="align-middle text-center">15B</td>
+                  <td class="align-middle text-center">UNK</td>
                   <td class="align-middle text-center">✔️</td>
-                  <td class="align-middle text-center">59.87</td>
-                  <td class="align-middle text-center"><b>64.22</b></td>
+                  <td class="align-middle text-center">64.82</td>
+                  <td class="align-middle text-center"><b>71.35</b></td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Feb 27, 2024</span>
+                  </td>
+                  <td class="align-middle text-center">PB-SQL<br>
+                    <span class="affiliation">Seoul National University</span><br><a href="" class="paperlink"></a>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">UNK</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">71.31</td>
+                  <td class="align-middle text-center">68.90</td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Nov 21, 2023</span>
+                  </td>
+                  <td class="align-middle text-center">MAC-SQL + GPT-4<br>
+                    <span class="affiliation">BUAA & Tencent</span><br><a href="https://arxiv.org/abs/2312.11242" class="paperlink">[Wang et al. '23]</a>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">UNK</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">58.76</td>
+                  <td class="align-middle text-center">67.68</td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Feb 27, 2024</span>
+                  </td>
+                  <td class="align-middle text-center">DTS-SQL + DeepSeek 7B<br>
+                    <span class="affiliation">University of Alberta</span><br><a href="https://arxiv.org/abs/2402.01117" class="paperlink">[Pourreza et al. '24]</a>
+                  </td>
+                  <td class="align-middle text-center">
+                    <a href="https://github.com/MohammadrezaPourreza/DTS-SQL">[link]</a>
+                  </td>
+                  <td class="align-middle text-center">7B</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">60.31</td>
+                  <td class="align-middle text-center">64.52</td>
                 </tr>
                 
                 <tr>
-                  <td scope="row" class="align-middle text-center">🥈2<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Oct 12, 2023</span>
+                  </td>
+                  <td class="align-middle text-center">SFT CodeS-15B<br>
+                    <span class="affiliation">Renmin University of China</span><br><a href="https://arxiv.org/abs/2402.16347" class="paperlink">[Li et al. SIGMOD'24]</a>
+                  </td>
+                  <td class="align-middle text-center">
+                    <a href="https://github.com/RUCKBReasoning/codes">[link]</a>
+                  </td>
+                  <td class="align-middle text-center">15B</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">59.87</td>
+                  <td class="align-middle text-center">64.22</td>
+                </tr>
+                
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Oct 12, 2023</span>
                   </td>
                   <td class="align-middle text-center">SFT CodeS-7B<br>
-                    <span class="affiliation">Anonymous</span><br><a href="" class="paperlink"></a>
+                    <span class="affiliation">Renmin University of China</span><br><a href="https://arxiv.org/abs/2402.16347" class="paperlink">[Li et al. SIGMOD'24]</a>
                   </td>
-                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">
+                    <a href="https://github.com/RUCKBReasoning/codes">[link]</a>
+                  </td>
                   <td class="align-middle text-center">7B</td>
                   <td class="align-middle text-center">✔️</td>
                   <td class="align-middle text-center">58.80</td>
@@ -660,12 +833,27 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">🥉3<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Nov 16, 2023</span>
+                  </td>
+                  <td class="align-middle text-center">Dubo-SQL, v1<br>
+                    <span class="affiliation">Mercator Technologies</span>
+                  </td>
+                  <td class="align-middle text-center">
+                  </td>
+                  <td class="align-middle text-center">UNK</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">66.01</td>
+                  <td class="align-middle text-center">63.00</td>
+                </tr>
+
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Nov 09, 2023</span>
                   </td>
                   <td class="align-middle text-center">DAIL-SQL + GPT-4<br>
                     <span class="affiliation">Alibaba Group</span><br><a href="https://arxiv.org/abs/2308.15363"
-                      class="paperlink">[Gao and Wang et al. 2023]</a>
+                      class="paperlink">[Gao and Wang et al. '23]</a>
                   </td>
                   <td class="align-middle text-center">
                     <a href="https://github.com/BeachWang/DAIL-SQL">[link]</a>
@@ -677,7 +865,7 @@
                 </tr>
                 
                 <tr>
-                  <td scope="row" class="align-middle text-center">4<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Jul 01, 2023</span>
                   </td>
                   <td class="align-middle text-center">GPT-4<br>
@@ -693,12 +881,12 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">5<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Aug 15, 2023</span>
                   </td>
                   <td class="align-middle text-center">DIN-SQL + GPT-4<br>
                     <span class="affiliation">University of Alberta</span><br><a href="https://arxiv.org/abs/2304.11015"
-                      class="paperlink">[Pourreza et al. 2023]</a>
+                      class="paperlink">[Pourreza et al. '23]</a>
                   </td>
                   <td class="align-middle text-center">
                     <a href="https://github.com/MohammadrezaPourreza/Few-shot-NL2SQL-with-prompting">[link]</a>
@@ -710,12 +898,12 @@
                 </tr>
                 
                 <tr>
-                  <td scope="row" class="align-middle text-center">6<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Mar 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">ChatGPT + CoT<br>
                     <span class="affiliation">HKU & DAMO</span><br><a href="https://arxiv.org/abs/2305.03111"
-                      class="paperlink">[Li et al. 2023]</a>
+                      class="paperlink">[Li et al. NeurIPS'23]</a>
                   </td>
                   <td class="align-middle text-center">
                     <a href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/bird">[link]</a>
@@ -727,7 +915,7 @@
                 </tr>
                 
                 <tr>
-                  <td scope="row" class="align-middle text-center">7<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Mar 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">ChatGPT<br>
@@ -741,12 +929,12 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">8<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Mar 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">ChatGPT + CoT<br>
                     <span class="affiliation">HKU & DAMO</span><br><a href="https://arxiv.org/abs/2305.03111"
-                      class="paperlink">[Li et al. 2023]</a>
+                      class="paperlink">[Li et al. NeurIPS'23]</a>
                   </td>
                   <td class="align-middle text-center">
                     <a href="https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/bird">[link]</a>
@@ -757,10 +945,22 @@
                   <td class="align-middle text-center">49.69</td>
                 </tr>
 
-
+                <tr>
+                  <td scope="row" class="align-middle text-center counter-cell">
+                    <span class="badge badge-secondary">Nov 23, 2023</span>
+                  </td>
+                  <td class="align-middle text-center">OPEN-SQL<br>
+                    <span class="affiliation">Anonymous</span><br><a href="" class="paperlink"></a>
+                  </td>
+                  <td class="align-middle text-center"></td>
+                  <td class="align-middle text-center">7B</td>
+                  <td class="align-middle text-center">✔️</td>
+                  <td class="align-middle text-center">41.56</td>
+                  <td class="align-middle text-center">48.08</td>
+                </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">9<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">Codex<br>
@@ -774,7 +974,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">10<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Mar 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">ChatGPT<br>
@@ -788,7 +988,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">11<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 17, 2023</span>
                   </td>
                   <td class="align-middle text-center">Codex<br>
@@ -802,7 +1002,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">12<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 5, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-3B<br>
@@ -816,7 +1016,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">13<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 3, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-Large<br>
@@ -830,7 +1030,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">14<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 5, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-3B<br>
@@ -844,7 +1044,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">15<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 3, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-Base<br>
@@ -858,7 +1058,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">16<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 3, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-Large<br>
@@ -872,7 +1072,7 @@
                 </tr>
 
                 <tr>
-                  <td scope="row" class="align-middle text-center">17<br>
+                  <td scope="row" class="align-middle text-center counter-cell">
                     <span class="badge badge-secondary">Feb 3, 2023</span>
                   </td>
                   <td class="align-middle text-center">T5-Base<br>
