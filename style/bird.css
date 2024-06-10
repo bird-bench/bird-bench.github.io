@@ -243,6 +243,15 @@ span.line {
     border-radius: 50px;
 }
 
+.btn-d {  
+    color: #fff;
+    font-weight: 400;
+    width: 100%;
+    text-transform: none;
+    background-color: #615EFC;
+    border-radius: 50px; 
+  }  
+
 #button-row-b {
     display: flex;
     justify-content: space-between;
