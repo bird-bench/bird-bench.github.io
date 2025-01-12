@@ -125,6 +125,15 @@
                     </button>
                   </a>
                 </div>
+                <div class="button-row">
+                  <button
+                    type="button"
+                    class="btn btn-d"
+                    onclick="showBirdCriticMessage()"
+                  >
+                    BIRD-CRITIC 1.0 (SQL)
+                  </button>
+                </div>
                 <div class="button-row" id="button-row-b">
                   <div class="btn-round">
                     <a
@@ -177,12 +186,25 @@
               }
             </style>
             <script>
-              function showMiniDevMessage() {
+              // A new function for BIRD-CRITIC
+              function showBirdCriticMessage() {
                 alert(
-                  "Coming Soon: Mini-Dev! Dive into 500 top-tier SQL cases covering all keywords in BIRD, including advanced window functions. For the first time, we're also including PostgreSQL and MySQL. Stay ahead and subscribe us for the immediate launch."
+                  "BIRD-CRITIC is the first SQL debugging benchmark investigating whether LLMs can effectively resolve user issues in real-world database applications. It contains 600 tasks in dev and 200 OOD hidden tests. The full challenges in BIRD-SQL 2025 is under collaboration with Google Cloud.\n\n" +
+                  "Key Highlights:\n" +
+                  "• 5 popular SQL dialects: MySQL, PostgreSQL, SQLServer, Oracle, and one OOD dialect\n" +
+                  "• Challenging tasks that go beyond SELECT (e.g., CREATE TRIGGER, UPDATE constraints, SQL Optimization)\n" +
+                  "• Each task is derived from real-world user cases and reproduced within the BIRD environment, verified by human experts\n" +
+                  "• Multi-thread sandbox enabling fast and robust evaluation\n" +
+                  "• Professionally curated test cases for each task.\n" +
+                  "We will release a PREVIEW set in this month and full set next month. Email us if you have some suggestions or new contents that you want to see!\n\n" +
+                  "Other exciting Sibling benchmarks you may expect in BIRD-SQL 2025:\n" +
+                  "• BIRD-CRITIC 1.5 (Repo-level Code Debugging for Real-World DB Applications)\n" +
+                  "• BIRD-Interact\n" +
+                  "• BIRD-Vision\n" +
+                  "• BIRD-Pro & BIRD-Pro Max: The second generation of BIRD-SQL covering comprehensive DB operations with new open-source large-scale, enterprise-grade databases with thousands of columns, TB-level data, and advanced constraints."
                 );
               }
-            </script>
+              </script>
 
             <div class="list-group-item" id="news">
               <h4>News</h4>
