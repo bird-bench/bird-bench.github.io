@@ -135,10 +135,7 @@
                   </button>
                 </div>
                 <div class="button-row">
-                  <a
-                    href=""
-                    target="_blank"
-                  >
+                  <a href="#" onclick="showLiveSQLBenchMessage(); return false;">
                   <button type="button" class="btn btn-e">
                     LiveSQLBench!
                   </button>
@@ -213,7 +210,18 @@
                   "• BIRD-Pro & BIRD-Pro Max: The second generation of BIRD-SQL covering comprehensive DB operations / BI querying with new open-source enterprise-level databases with thousands of columns, advanced constrains and TB-level data."
                 );
               }
-              </script>
+            </script>
+            <script>
+                function showLiveSQLBenchMessage() {
+                  alert(
+                    "Inspired by great LiveCodeBench, we're developing LiveSQLBench to provide a robust and contamination-free evaluation for text-to-SQL models on challenging, comprehensive benchmark, which will be updated periodically.\n\n" +
+                    "LiveSQLBench (BIRD-SQL Pro v0.5) will feature diverse real-world user queries, including Business Intelligence (BI), CRUD operations, etc.\n\n" +
+                    "Each release will include 50 new, fully open-source DBs curated by the BIRD team through expert collaboration and continuous improvement. It will cover a wide range of database sizes, from end-user level (around 39 columns) to industrial level (1340+ columns), catering to various query types.\n\n" +
+                    "Look for LiveSQLBench to launch in March! And more exciting text-to-SQL evaluations on the way~ :) "
+                  );
+                }
+            </script>
+            
 
             <div class="list-group-item" id="news">
               <h4>News</h4>
