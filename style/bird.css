@@ -257,6 +257,22 @@ span.line {
     /* Change the background color when the cursor is over the button */
 }
 
+.btn-e {  
+    color: #fff;
+    font-weight: 400;
+    width: 100%;
+    text-transform: none;
+    background-color: #615EFC;
+    border-radius: 50px; 
+  } 
+
+.btn-e:hover {
+    background-color: #E82561;
+    color: #fff;
+    font-weight: bold;
+    /* Change the background color when the cursor is over the button */
+}
+
 #button-row-b {
     display: flex;
     justify-content: space-between;
