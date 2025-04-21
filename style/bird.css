@@ -280,6 +280,7 @@ span.line {
     text-transform: none;
     background-color: #4184ff;
     border-radius: 50px; 
+    cursor: pointer;
 }
 
 .btn-f:hover {
