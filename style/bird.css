@@ -273,6 +273,38 @@ span.line {
     /* Change the background color when the cursor is over the button */
 }
 
+.btn-f {
+    color: #fff;
+    font-weight: 400;
+    width: 100%;
+    text-transform: none;
+    background-color: #4184ff;
+    border-radius: 50px; 
+}
+
+.btn-f:hover {
+    font-weight: 500;
+}
+
+.btn-f:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#overall-leaderboard-btn.active, 
+#single-model-leaderboard-btn.active {
+    background-color: #4184ff;
+    color: #fff;
+    font-weight: 500;
+}
+
+#overall-leaderboard-btn:not(.active), 
+#single-model-leaderboard-btn:not(.active) {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #4184ff;
+}
+
 #button-row-b {
     display: flex;
     justify-content: space-between;
