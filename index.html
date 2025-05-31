@@ -271,7 +271,11 @@
                            padding: 2px 4px;
                            border-radius: 5px;
                            "
-                         ><strong style="color: #ffe7ce">May 22, 2025:</strong></span> We update Single-Model Leaderboard which showcases single model results, excluding multi-model collaboration. The number of candidates must be less than 8 when using majority vote or self-consistency methods.
+                         ><strong style="color: #ffe7ce">May 22, 2025:</strong></span>  We update Single-Model Leaderboard, now the Self-Consistency column has 4 values:
+                          <strong>empty</strong> (no self consistency used);
+                          <strong>Few:</strong> 1-7 candidates used in majority vote;
+                          <strong>Many:</strong> 8-32 candidates;
+                          <strong>Scale:</strong> &gt;32 candidates;
                        </li>
                       <li style="list-style-type: none">
                          <span
@@ -3328,7 +3332,10 @@
                       </td>
                       <td class="align-middle text-center"><a></a></td>
                       <td class="align-middle text-center">32B</td>
-                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center"
+    style="font-size: 0.95em; font-style: italic;">
+  Scale
+</td>
                       <td class="align-middle text-center">70.08</td>
                       <td class="align-middle text-center">70.93</td>
                     </tr>
@@ -3342,7 +3349,10 @@
                       </td>
                       <td class="align-middle text-center"><a href="https://huggingface.co/infly/inf-rl-qwen-coder-32b-2746">[link]</a></td>
                       <td class="align-middle text-center">32B</td>
-                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center"
+    style="font-size: 0.95em; font-style: italic; ">
+  Few
+</td>
                       <td class="align-middle text-center">70.08</td>
                       <td class="align-middle text-center">70.60</td>
                     </tr>
@@ -3370,7 +3380,10 @@
                       </td>
                       <td class="align-middle text-center"><a href="https://github.com/XGenerationLab/XiYanSQL-QwenCoder-32B">[link]</a></td>
                       <td class="align-middle text-center">32B</td>
-                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center"
+    style="font-size: 0.95em; font-style: italic;">
+  Few
+</td>
                       <td class="align-middle text-center">67.01</td>
                       <td class="align-middle text-center">69.03</td>
                     </tr>
@@ -3657,7 +3670,10 @@
                         >
                       </td>
                       <td class="align-middle text-center">1B</td>
-                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center"
+                          style="font-size: 0.95em; font-style: italic;">
+                        Few
+                      </td>
                       <td class="align-middle text-center">-</td>
                       <td class="align-middle text-center">51.54</td>
                     </tr>
