@@ -135,7 +135,10 @@
                   </button>
                 </div>
                 <div class="button-row">
-                  <a href="#" onclick="showLiveSQLBenchMessage(); return false;">
+                  <a
+                    href="https://livesqlbench.ai/"
+                    target="_blank"
+                  >
                   <button type="button" class="btn btn-e">
                     LiveSQLBench!
                   </button>
@@ -236,16 +239,28 @@
                       <li style="list-style-type: none">
                         <span
                           style="
+                          background-color: #68488f;
+                          color: white;
+                          padding: 2px 4px;
+                          border-radius: 5px;
+                          "
+                        ><strong style="color: #ffe7ce">May 29, 2025:</strong></span> We release <a href="https://livesqlbench.ai/">LiveSQLBench</a>, the first containmination-free text-to-SQL benchmark covering full SQL specturm featuring more advanced SQLs, annotated RDBs, structrued / unstructured knowledge base, test cases, etc.
+                        First, we present <strong><code>LiveSQLBench-Base-Lite</code></strong> with 270 tasks for trail. Even though Lite is the easiest version with the most clear conditions, the SOTA model <code>o3-mini</code> only achieves <strong>44.81%</strong> Success Rate.
+                        We will update full set and settings. You can preview and interact with data samples in our website. Stay tuned!
+                      </li>
+                      <li style="list-style-type: none">
+                        <span
+                          style="
                             background-color: #22a699;
                             color: white;
                             padding: 2px 4px;
                             border-radius: 5px;
                           "
                           ><strong style="color: #ffe7ce"
-                            >May. 25, 2025:</strong></span> Please report issues when you find any more of BIRD-SQL 2023, 
+                            >May. 25, 2025:</strong></span> Please report issues when you find any more of BIRD-SQL 2023,
                             we will check and update dev for the last time during summer by considering all feedbacks.
-                            Next week, we will start our new project <strong><code>LiveSQLBench</code></strong>, the first one-stop containmination-free text-to-SQL benchmark covering full SQL specturm featuring more advanced SQLs, 
-                            databases, hierarichal / unstructured knoweldge base, test cases. 
+                            Next week, we will start our new project <strong><code>LiveSQLBench</code></strong>, the first one-stop containmination-free text-to-SQL benchmark covering full SQL specturm featuring more advanced SQLs,
+                            databases, hierarichal / unstructured knoweldge base, test cases.
                             Also it supports multi-turn conversational and interactive evaluation via our <strong><code>BIRD-Interact</code></strong>, which will be released together.
                       </li>
                       <li style="list-style-type: none">
@@ -256,7 +271,11 @@
                            padding: 2px 4px;
                            border-radius: 5px;
                            "
-                         ><strong style="color: #ffe7ce">May 22, 2025:</strong></span> We update Single-Model Leaderboard which showcases single model results, excluding multi-model collaboration. The number of candidates must be less than 8 when using majority vote or self-consistency methods.
+                         ><strong style="color: #ffe7ce">May 22, 2025:</strong></span>  We update Single-Model Leaderboard, now the Self-Consistency column has 4 values:
+                          <strong>empty</strong> (no self consistency used);
+                          <strong>Few:</strong> 1-7 candidates used in majority vote;
+                          <strong>Many:</strong> 8-32 candidates;
+                          <strong>Scale:</strong> &gt;32 candidates;
                        </li>
                       <li style="list-style-type: none">
                          <span
@@ -784,6 +803,7 @@
                     </td>
                     <td class="align-middle text-center">AskData + GPT-4o<br>
                       <span class="affiliation">AT&T CDO - DSAIR</span>
+                      <br><a href="https://arxiv.org/abs/2505.19988" class="paperlink">[Shkapenyuk et al. '25]</a>
                     </td>
                     <td class="align-middle text-center"></td>
                     <td class="align-middle text-center">UNK</td>
@@ -835,6 +855,19 @@
                     <td class="align-middle text-center">75.63</td>
                   </tr>
 
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">May 27, 2025</span>
+                    </td>
+                    <td class="align-middle text-center">CSC-SQL + XiYanSQL-QwenCoder-32B-2412<br>
+                      <span class="affiliation">Wuhan University of Technology + University of Science and Technology of China</span><br><a href="https://arxiv.org/abs/2505.13271" class="paperlink">[Lei Sheng et al. '25]</a>
+                    </td>
+                    <td class="align-middle text-center"><a href="https://github.com/CycloneBoy/csc_sql">[link]</a></td>
+                    <td class="align-middle text-center">32B</td>
+                    <td class="align-middle text-center">✔️</td>
+                    <td class="align-middle text-center">71.33</td>
+                    <td class="align-middle text-center">73.67</td>
+                  </tr>
 
 
   <!--                 <tr>
@@ -924,6 +957,21 @@
                       <td class="align-middle text-center">67.21</td>
                       <td class="align-middle text-center">71.83</td>
                     </tr>
+
+
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">May 27, 2025</span>
+                    </td>
+                    <td class="align-middle text-center">CSC-SQL + Qwen2.5-Coder-7B-Instruct<br>
+                      <span class="affiliation">Wuhan University of Technology + University of Science and Technology of China</span><br><a href="https://arxiv.org/abs/2505.13271" class="paperlink">[Lei Sheng et al. '25]</a>
+                    </td>
+                    <td class="align-middle text-center"><a href="https://github.com/CycloneBoy/csc_sql">[link]</a></td>
+                    <td class="align-middle text-center">7B</td>
+                    <td class="align-middle text-center">✔️</td>
+                    <td class="align-middle text-center">69.19</td>
+                    <td class="align-middle text-center">71.72</td>
+                  </tr>
 
                     <tr>
                       <td
@@ -1214,6 +1262,7 @@
                       </td>
                       <td class="align-middle text-center">AskData + GPT-4o<br>
                         <span class="affiliation">AT&T CDO - DSAIR</span>
+                        <br><a href="https://arxiv.org/abs/2505.19988" class="paperlink">[Shkapenyuk et al. '25]</a>
                       </td>
                       <td class="align-middle text-center"></td>
                       <td class="align-middle text-center">UNK</td>
@@ -2325,6 +2374,7 @@
                       </td>
                       <td class="align-middle text-center">AskData + GPT-4o<br>
                         <span class="affiliation">AT&T CDO - DSAIR</span>
+                        <br><a href="https://arxiv.org/abs/2505.19988" class="paperlink">[Shkapenyuk et al. '25]</a>
                       </td>
                       <td class="align-middle text-center"></td>
                       <td class="align-middle text-center">UNK</td>
@@ -2426,6 +2476,32 @@
                       <td class="align-middle text-center">68.79</td>
                     </tr>
                     -->
+
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">May 27, 2025</span>
+                      </td>
+                      <td class="align-middle text-center">CSC-SQL + XiYanSQL-QwenCoder-32B-2412<br>
+                        <span class="affiliation">Wuhan University of Technology + University of Science and Technology of China</span><br><a href="https://arxiv.org/abs/2505.13271" class="paperlink">[Lei Sheng et al. '25]</a>
+                      </td>
+                      <td class="align-middle text-center"><a href="https://github.com/CycloneBoy/csc_sql">[link]</a></td>
+                      <td class="align-middle text-center">32B</td>
+                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center">67.84</td>
+                    </tr>
+
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">May 27, 2025</span>
+                      </td>
+                      <td class="align-middle text-center">CSC-SQL + Qwen2.5-Coder-7B-Instruct<br>
+                        <span class="affiliation">Wuhan University of Technology + University of Science and Technology of China</span><br><a href="https://arxiv.org/abs/2505.13271" class="paperlink">[Lei Sheng et al. '25]</a>
+                      </td>
+                      <td class="align-middle text-center"><a href="https://github.com/CycloneBoy/csc_sql">[link]</a></td>
+                      <td class="align-middle text-center">7B</td>
+                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center">67.47</td>
+                    </tr>
 
                     <tr>
                       <td scope="row" class="align-middle text-center counter-cell">
@@ -2617,6 +2693,7 @@
                       </td>
                       <td class="align-middle text-center">AskData + GPT-4o<br>
                         <span class="affiliation">AT&T CDO - DSAIR</span>
+                        <br><a href="https://arxiv.org/abs/2505.19988" class="paperlink">[Shkapenyuk et al. '25]</a>
                       </td>
                       <td class="align-middle text-center"></td>
                       <td class="align-middle text-center">UNK</td>
@@ -3248,6 +3325,23 @@
 
                     <tr>
                       <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">May 27, 2025</span>
+                      </td>
+                      <td class="align-middle text-center">SIFT-32B<br>
+                        <span class="affiliation">Seek AI</span><br><a href="https://www.seek.ai/research" class="paperlink">Seek AI Research</a>
+                      </td>
+                      <td class="align-middle text-center"><a></a></td>
+                      <td class="align-middle text-center">32B</td>
+                      <td class="align-middle text-center"
+    style="font-size: 0.95em; font-style: italic;">
+  Scale
+</td>
+                      <td class="align-middle text-center">70.08</td>
+                      <td class="align-middle text-center">70.93</td>
+                    </tr>
+
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
                         <span class="badge badge-secondary">May 08, 2025</span>
                       </td>
                       <td class="align-middle text-center">Infly-RL-SQL-32B<br>
@@ -3255,7 +3349,10 @@
                       </td>
                       <td class="align-middle text-center"><a href="https://huggingface.co/infly/inf-rl-qwen-coder-32b-2746">[link]</a></td>
                       <td class="align-middle text-center">32B</td>
-                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center"
+    style="font-size: 0.95em; font-style: italic; ">
+  Few
+</td>
                       <td class="align-middle text-center">70.08</td>
                       <td class="align-middle text-center">70.60</td>
                     </tr>
@@ -3283,7 +3380,10 @@
                       </td>
                       <td class="align-middle text-center"><a href="https://github.com/XGenerationLab/XiYanSQL-QwenCoder-32B">[link]</a></td>
                       <td class="align-middle text-center">32B</td>
-                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center"
+    style="font-size: 0.95em; font-style: italic;">
+  Few
+</td>
                       <td class="align-middle text-center">67.01</td>
                       <td class="align-middle text-center">69.03</td>
                     </tr>
@@ -3570,7 +3670,10 @@
                         >
                       </td>
                       <td class="align-middle text-center">1B</td>
-                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center"
+                          style="font-size: 0.95em; font-style: italic;">
+                        Few
+                      </td>
                       <td class="align-middle text-center">-</td>
                       <td class="align-middle text-center">51.54</td>
                     </tr>
