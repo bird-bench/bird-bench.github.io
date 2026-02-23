@@ -416,3 +416,67 @@ span.line {
 .counter-cell .badge {
     display: block;
 }
+
+.new-dev-badge {
+    background: #5b86e5;
+    color: #fff;
+    font-size: 7px;
+    padding: 1px 5px;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    display: inline-block;
+    margin-bottom: 2px;
+    position: relative;
+    cursor: default;
+}
+
+.new-dev-badge[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 4px);
+    right: 0;
+    background: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 400;
+    white-space: nowrap;
+    z-index: 10;
+    pointer-events: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.new-sub-badge {
+    background: #2ecc71;
+    color: #fff;
+    font-size: 7px;
+    padding: 1px 5px;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    display: inline-block;
+    margin-bottom: 2px;
+    position: relative;
+    cursor: default;
+}
+
+.new-sub-badge[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 4px);
+    right: 0;
+    background: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 400;
+    white-space: nowrap;
+    z-index: 10;
+    pointer-events: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
