@@ -98,6 +98,15 @@
               <div id="button-group">
                 <div class="button-row">
                   <a
+                    href="https://livesqlbench.ai/data-intelligence-index/"
+                    target="_blank"
+                  >
+                  <button type="button" class="btn btn-g">
+                    🔥 Data Intelligence Index
+                  </button>
+                </div>
+                <div class="button-row">
+                  <a
                     href="https://arxiv.org/pdf/2305.03111.pdf"
                     target="_blank"
                   >
@@ -243,6 +252,28 @@
                   <div class="card-body" style="background-color: #f1f6f9">
 
                     <ul style="padding-left: 0">
+
+                  <li style="list-style-type: none">
+                    <span style="background-color: #B03052; color: white; padding: 2px 4px; border-radius: 5px;">
+                      <strong style="color: #ffe7ce">🚀 Mar. 23, 2026:</strong>
+                    </span>
+                    We release <strong><a href="https://huggingface.co/datasets/birdsql/bird-critic-1.0-sqlite" target="_blank" style="color:#155E95; text-decoration: none;">BIRD-Critic-SQLite</a></strong>, a new single-dialect benchmark containing <strong>500</strong> high-quality user issues focused on real-world SQLite database applications. Along with the dataset, we also release 3 RL-trained models: <strong><a href="https://huggingface.co/birdsql/BIRD-Talon-14b" target="_blank" style="color:#155E95; text-decoration: none;">BIRD-Talon-14B</a></strong>, <strong><a href="https://huggingface.co/birdsql/BIRD-Talon-7b" target="_blank" style="color:#155E95; text-decoration: none;">BIRD-Talon-7B</a></strong>, and <strong><a href="https://huggingface.co/birdsql/BIRD-Zeno-7b" target="_blank" style="color:#155E95; text-decoration: none;">BIRD-Zeno-7B</a></strong>. Data is available on <strong><a href="https://huggingface.co/datasets/birdsql/bird-critic-1.0-sqlite" target="_blank" style="color:#155E95; text-decoration: none;">HuggingFace</a></strong> and evaluation script on <strong><a href="https://github.com/bird-bench/BIRD-CRITIC-1" target="_blank" style="color:#155E95; text-decoration: none;">GitHub</a></strong>.
+                  </li>
+                  <li style="list-style-type: none">
+                  <span style="background-color: #B03052; color: white; padding: 2px 4px; border-radius: 5px;">
+                    <strong style="color: #ffe7ce">Mar. 3, 2026:  </strong> </span>
+                  <strong><a href="https://huggingface.co/datasets/birdsql/livesqlbench-large-v1" target="_blank">LiveSQLBench-Large-v1</a></strong> is released!
+                  The industrial-scale counterpart featuring ~1K columns, ~54 tables each DB with 480 tasks,
+                  10x schema complexity over LiveSQLBench-Base-Full-v1, ~84K avg prompt tokens for long-context challenge,
+                  and Business Rule Drift (external knowledge can change and even has inconsistency across releases) for live context-learning evaluation.
+                  See more at <strong><a href="https://livesqlbench.ai" target="_blank">livesqlbench.ai</a></strong>.
+                </li>
+                  <li style="list-style-type: none">
+                  <span style="background-color: #B03052; color: white; padding: 2px 4px; border-radius: 5px;">
+                    <strong style="color: #ffe7ce">Mar. 6, 2026:  </strong> </span>
+                  We release the <strong><a href="https://livesqlbench.ai/data-intelligence-index/" target="_blank">Data Intelligence Index</a></strong>, a comprehensive evaluation of frontier AI models and agents on data-centric intelligence, covering DB querying, BI analysis, DB application debugging, human-centric interaction, multi-modal querying, and more.
+                  <strong>If you'd like your benchmark or model to be included, please feel free to <a href="mailto:bird.bench25@gmail.com">contact us</a>!</strong>
+                </li>
                   <li style="list-style-type: none">
                   <span style="background-color: #634687; color: white; padding: 2px 4px; border-radius: 5px;">
                     <strong style="color: #ffe7ce">🇧🇷 Feb. 8, 2026:  </strong> </span> Our paper <strong><a href="https://arxiv.org/abs/2510.05318" target="_blank">BIRD-Interact</a></strong> has been accepted to <strong>ICLR 2026 (Oral)</strong>!  
@@ -977,7 +1008,6 @@
                     <td class="align-middle text-center">77.64</td>
                     <td class="align-middle text-center"><b>81.95</b></td>
                   </tr>
-
                   <tr>
                     <td scope="row" class="align-middle text-center counter-cell">
                       <span class="badge badge-secondary">Sep 25, 2025</span>
@@ -1026,9 +1056,9 @@
                       <span class="badge badge-secondary">Jan 26, 2026</span>
                     </td>
                     <td class="align-middle text-center">DeepEye-SQL<br>
-                      <span class="affiliation">Anonymous</span>
+                      <span class="affiliation">HKUST(GZ)</span><br><a href="https://arxiv.org/abs/2510.17586" class="paperlink">[Boyan Li et al. '25]</a>
                     </td>
-                    <td class="align-middle text-center"></td>
+                    <td class="align-middle text-center"><a href="https://github.com/HKUSTDial/DeepEye-SQL">[link]</a></td>
                     <td class="align-middle text-center">UNK</td>
                     <td class="align-middle text-center">✔️</td>
                     <td class="align-middle text-center">73.53</td>
@@ -1090,7 +1120,35 @@
                     <td class="align-middle text-center">74.90</td>
                     <td class="align-middle text-center">76.02</td>
                   </tr>
+		
+		<tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Apr 3, 2026</span>
+                    </td>
+                    <td class="align-middle text-center">xiaoyi-text-to-sql<br>
+                      <span class="affiliation">wenyuai</span>
+                    </td>
+                    <td class="align-middle text-center"></td>
+                    <td class="align-middle text-center">UNK</td>
+                    <td class="align-middle text-center">✔️</td>
+                    <td class="align-middle text-center">72.75 </td>
+                    <td class="align-middle text-center"><b>75.96</b></td>
+                  </tr>
 
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Feb 21, 2026</span>
+                    </td>
+                    <td class="align-middle text-center">RED-SQL<br>
+                      <span class="affiliation">South China Normal University</span>
+                    </td>
+                    <td class="align-middle text-center"></td>
+                    <td class="align-middle text-center">30B</td>
+                    <td class="align-middle text-center">✔️</td>
+                    <td class="align-middle text-center">74.19</td>
+                    <td class="align-middle text-center">75.91</td>
+                  </tr>
+                    
                   <tr>
                     <td scope="row" class="align-middle text-center counter-cell">
                       <span class="badge badge-secondary">Sep 22, 2025</span>
@@ -1206,28 +1264,28 @@
                       <span class="badge badge-secondary">Oct 20, 2025</span>
                     </td>
                     <td class="align-middle text-center">DeepEye-SQL<br>
-                      <span class="affiliation">Anonymous</span>
+                      <span class="affiliation">HKUST(GZ)</span><br><a href="https://arxiv.org/abs/2510.17586" class="paperlink">[Boyan Li et al. '25]</a>
                     </td>
-                    <td class="align-middle text-center"></td>
+                    <td class="align-middle text-center"><a href="https://github.com/HKUSTDial/DeepEye-SQL">[link]</a></td>
                     <td class="align-middle text-center">3B-MOE</td>
                     <td class="align-middle text-center">✔️</td>
                     <td class="align-middle text-center">73.53</td>
                     <td class="align-middle text-center">75.07</td>
                   </tr>
 
-<tr>
-  <td scope="row" class="align-middle text-center counter-cell">
-    <span class="badge badge-secondary">Oct 30, 2025</span>
-  </td>
-  <td class="align-middle text-center">Spektr-SQL<br>
-    <span class="affiliation">Amazon Ads-SpektrBot</span><br><a href="https://www.notion.so/BIRD-Submission-SQL-291e8bf3051480afa7b8cfac3aa26b10" class="paperlink">[Ravi Shankar et al.]</a>
-  </td>
-  <td class="align-middle text-center"></td>
-  <td class="align-middle text-center">30B-3B-MoE</td>
-  <td class="align-middle text-center">✔️</td>
-  <td class="align-middle text-center">72.10</td>
-  <td class="align-middle text-center">74.85</td>
-</tr>
+                  <tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Oct 30, 2025</span>
+                    </td>
+                    <td class="align-middle text-center">Spektr-SQL<br>
+                      <span class="affiliation">Amazon Ads-SpektrBot</span><br><a href="https://www.notion.so/BIRD-Submission-SQL-291e8bf3051480afa7b8cfac3aa26b10" class="paperlink">[Ravi Shankar et al.]</a>
+                    </td>
+                    <td class="align-middle text-center"></td>
+                    <td class="align-middle text-center">30B-3B-MoE</td>
+                    <td class="align-middle text-center">✔️</td>
+                    <td class="align-middle text-center">72.10</td>
+                    <td class="align-middle text-center">74.85</td>
+                  </tr>
 
                   <tr>
                     <td scope="row" class="align-middle text-center counter-cell">
@@ -1554,6 +1612,20 @@
                     </tr>
 
                     <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Feb 21, 2026</span>
+                      </td>
+                      <td class="align-middle text-center">Claude Opus 4.6<br>
+                        <span class="affiliation">Baseline</span>
+                      </td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">UNK</td>
+                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" data-tooltip="Evaluated on BIRD Dev 20251106">New Dev</span><br>68.77</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" style="visibility:hidden">New Dev</span><br>70.15</td>
+                    </tr>
+
+                    <tr>
                       <td
                         scope="row"
                         class="align-middle text-center counter-cell"
@@ -1682,6 +1754,20 @@
                     </tr>
 
                   <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Feb 21, 2026</span>
+                      </td>
+                      <td class="align-middle text-center">Qwen3-Coder-480B-A35B<br>
+                        <span class="affiliation">Baseline</span>
+                      </td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">UNK</td>
+                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" data-tooltip="Evaluated on BIRD Dev 20251106">New Dev</span><br>66.17</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" style="visibility:hidden">New Dev</span><br>68.14</td>
+                    </tr>
+
+                  <tr>
                     <td scope="row" class="align-middle text-center counter-cell">
                       <span class="badge badge-secondary">Mar 4, 2025</span>
                     </td>
@@ -1726,6 +1812,20 @@
                       <td class="align-middle text-center">65.91</td>
                       <td class="align-middle text-center">67.41</td>
                     </tr>
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Feb 21, 2026</span>
+                      </td>
+                      <td class="align-middle text-center">Claude 4.5 Sonnet<br>
+                        <span class="affiliation">Baseline</span>
+                      </td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">UNK</td>
+                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" data-tooltip="Evaluated on BIRD Dev 20251106">New Dev</span><br>67.34</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" style="visibility:hidden">New Dev</span><br>66.85</td>
+                    </tr>
+
                     <tr>
                       <td
                         scope="row"
@@ -2025,6 +2125,20 @@
                     </tr>
 
                     <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Feb 21, 2026</span>
+                      </td>
+                      <td class="align-middle text-center">GLM-4.7<br>
+                        <span class="affiliation">Baseline</span>
+                      </td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">UNK</td>
+                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" data-tooltip="Evaluated on BIRD Dev 20251106">New Dev</span><br>63.82</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" style="visibility:hidden">New Dev</span><br>62.94</td>
+                    </tr>
+
+                    <tr>
                       <td
                         scope="row"
                         class="align-middle text-center counter-cell"
@@ -2084,6 +2198,20 @@
                       <td class="align-middle text-center">✔️</td>
                       <td class="align-middle text-center">58.15</td>
                       <td class="align-middle text-center">60.98</td>
+                    </tr>
+
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Feb 21, 2026</span>
+                      </td>
+                      <td class="align-middle text-center">DeepSeek-R1<br>
+                        <span class="affiliation">Baseline</span>
+                      </td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">UNK</td>
+                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" data-tooltip="Evaluated on BIRD Dev 20251106">New Dev</span><br>61.67</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" style="visibility:hidden">New Dev</span><br>60.93</td>
                     </tr>
 
                     <tr>
@@ -2184,6 +2312,20 @@
                       <td class="align-middle text-center">✔️</td>
                       <td class="align-middle text-center">55.8</td>
                       <td class="align-middle text-center">60.31</td>
+                    </tr>
+
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Feb 21, 2026</span>
+                      </td>
+                      <td class="align-middle text-center">Kimi-K2-Thinking<br>
+                        <span class="affiliation">Baseline</span>
+                      </td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">UNK</td>
+                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" data-tooltip="Evaluated on BIRD Dev 20251106">New Dev</span><br>60.63</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" style="visibility:hidden">New Dev</span><br>59.87</td>
                     </tr>
 
                     <tr>
@@ -2440,12 +2582,20 @@
                       </td>
                       <td class="align-middle text-center">
                         Interactive-T2S<br />
-                        <span class="affiliation">Anonymous</span><br /><a
-                          href=""
+                        <span class="affiliation"
+                          >Peking University</span
+                        ><br /><a
+                          href="https://dl.acm.org/doi/10.1145/3746252.3761052"
                           class="paperlink"
-                        ></a>
+                          >[Xiong et al. CIKM'25]</a
+                        >
                       </td>
-                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">
+                        <a
+                          href="https://github.com/JimXiongGM/Interactive-Text-to-SQL"
+                          >[link]</a
+                        >
+                      </td>
                       <td class="align-middle text-center">UNK</td>
                       <td class="align-middle text-center"></td>
                       <td class="align-middle text-center">54.56</td>
@@ -2928,12 +3078,39 @@
 
                     <tr>
                       <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Feb 21, 2026</span>
+                      </td>
+                      <td class="align-middle text-center">RED-SQL<br>
+                        <span class="affiliation">South China Normal University</span>
+                      </td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">30B</td>
+                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center">71.18</td>
+                    </tr>
+下·
+			<tr>
+                    <td scope="row" class="align-middle text-center counter-cell">
+                      <span class="badge badge-secondary">Apr 3, 2026</span>
+                    </td>
+                    <td class="align-middle text-center">xiaoyi-text-to-sql<br>
+                      <span class="affiliation">wenyuai</span>
+                    </td>
+                    <td class="align-middle text-center"></td>
+                    <td class="align-middle text-center">UNK</td>
+                    <td class="align-middle text-center">✔️</td>
+                    <td class="align-middle text-center">70.85 </td>
+                  </tr>
+
+                    
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
                         <span class="badge badge-secondary">Jan 26, 2026</span>
                       </td>
                       <td class="align-middle text-center">DeepEye-SQL<br>
-                        <span class="affiliation">Anonymous</span>
+                        <span class="affiliation">HKUST(GZ)</span><br><a href="https://arxiv.org/abs/2510.17586" class="paperlink">[Boyan Li et al. '25]</a>
                       </td>
-                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center"><a href="https://github.com/HKUSTDial/DeepEye-SQL">[link]</a></td>
                       <td class="align-middle text-center">UNK</td>
                       <td class="align-middle text-center">✔️</td>
                       <td class="align-middle text-center">70.43</td>
@@ -3056,9 +3233,9 @@
                         <span class="badge badge-secondary">Oct 20, 2025</span>
                       </td>
                       <td class="align-middle text-center">DeepEye-SQL<br>
-                        <span class="affiliation">Anonymous</span>
+                        <span class="affiliation">HKUST(GZ)</span><br><a href="https://arxiv.org/abs/2510.17586" class="paperlink">[Boyan Li et al. '25]</a>
                       </td>
-                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center"><a href="https://github.com/HKUSTDial/DeepEye-SQL">[link]</a></td>
                       <td class="align-middle text-center">3B-MOE</td>
                       <td class="align-middle text-center">✔️</td>
                       <td class="align-middle text-center">68.82</td>
@@ -3148,7 +3325,7 @@
                       <td class="align-middle text-center">✔️</td>
                       <td class="align-middle text-center">67.05</td>
                     </tr>
-
+                    
                     <tr>
                       <td scope="row" class="align-middle text-center counter-cell">
                         <span class="badge badge-secondary">May 21, 2024</span>
@@ -3830,6 +4007,30 @@
                     </tr>
                     <tr>
                       <td class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Jun 30, 2026</span>
+                      </td>
+                      <td class="align-middle text-center">
+                        Struct-SQL<br />
+                        <span class="affiliation">Crater Labs</span><br /><a
+                          href="https://arxiv.org/abs/2512.17053"
+                          class="paperlink"
+                          >[Thaker et al. CAIAC'26]</a
+                        >
+                      </td>
+                      <td class="align-middle text-center">
+                        <a href="https://github.com/craterlabs/Struct-SQL-Distillation">[link]</a>
+                      </td>                      
+                      
+                      <td class="align-middle text-center"><b>4B</b></td>
+                      <td class="align-middle text-center">✔️</td>
+                      <td class="align-middle text-center">45.00</td>
+                      <td class="align-middle text-center">-</td>
+                      <td class="align-middle text-center">-</td>
+                    </tr>
+
+                                        
+                    <tr>
+                      <td class="align-middle text-center counter-cell">
                         <span class="badge badge-secondary">Jun 31, 2024</span>
                       </td>
                       <td class="align-middle text-center">
@@ -3976,6 +4177,22 @@
                       <td class="align-middle text-center"><b>92.96</b></td>
                     </tr>
 
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Mar 12, 2026</span>
+                      </td>
+                      <td class="align-middle text-center"> Gemini-SQL (Multitask SFT + Gemini-2.5-Pro)<br>
+                        <span class="affiliation">Google Cloud Databases</span><br><a href="https://cloud.google.com/blog/products/databases/how-to-get-gemini-to-deeply-understand-your-database" class="paperlink">Google Cloud Databases</a>
+                      </td>
+                      <td class="align-middle text-center"><a></a></td>
+                      <td class="align-middle text-center">UNK</td>
+                      <td class="align-middle text-center"
+    style="font-size: 0.95em; font-style: italic;">Many
+</td>
+                      <td class="align-middle text-center">73.27</td>
+                      <td class="align-middle text-center"><b>77.14</b></td>
+                    </tr>
+
                       <tr>
                       <td scope="row" class="align-middle text-center counter-cell">
                         <span class="badge badge-secondary">Dec 4, 2025</span>
@@ -3989,25 +4206,7 @@
     style="font-size: 0.95em; font-style: italic;">Many
 </td>
                       <td class="align-middle text-center">72.99</td>
-                      <td class="align-middle text-center"><b>76.47</b></td>
-                    </tr>
-                    
-                    
-
-                    <tr>
-                      <td scope="row" class="align-middle text-center counter-cell">
-                        <span class="badge badge-secondary">Oct 16, 2025</span>
-                      </td>
-                      <td class="align-middle text-center"> Gemini-SQL (Multitask SFT + Gemini-2.5-Pro)<br>
-                        <span class="affiliation">Google Cloud Databases</span><br><a href="https://cloud.google.com/blog/products/databases/how-to-get-gemini-to-deeply-understand-your-database" class="paperlink">Google Cloud Databases</a>
-                      </td>
-                      <td class="align-middle text-center"><a></a></td>
-                      <td class="align-middle text-center">UNK</td>
-                      <td class="align-middle text-center"
-    style="font-size: 0.95em; font-style: italic;">Few
-</td>
-                      <td class="align-middle text-center">72.62</td>
-                      <td class="align-middle text-center"><b>76.13</b></td>
+                      <td class="align-middle text-center">76.47</td>
                     </tr>
 
                     <tr>
@@ -4026,22 +4225,36 @@
                       <td class="align-middle text-center">75.68</td>
                     </tr>
 
-<tr>
-  <td scope="row" class="align-middle text-center counter-cell">
-    <span class="badge badge-secondary">Oct 30, 2025</span>
-  </td>
-  <td class="align-middle text-center">Spektr-SQL<br>
-    <span class="affiliation">Amazon Ads-SpektrBot</span><br><a href="https://www.notion.so/BIRD-Submission-SQL-291e8bf3051480afa7b8cfac3aa26b10" class="paperlink">[Ravi Shankar et al.]</a>
-  </td>
-  <td class="align-middle text-center"></td>
-  <td class="align-middle text-center">30B-3B-MoE</td>
-  <td class="align-middle text-center"
-    style="font-size: 0.95em; font-style: italic;">
-  Few
-</td>
-  <td class="align-middle text-center">72.10</td>
-  <td class="align-middle text-center">74.85</td>
-</tr>
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Dec 15, 2025</span>
+                      </td>
+                      <td class="align-middle text-center">SiriusAI-Text2SQL-32B-v2<br>
+                        <span class="affiliation">Tencent Data & Computation Platform Department</span><br>
+                      </td>
+                      <td class="align-middle text-center"><a></a></td>
+                      <td class="align-middle text-center">32B</td>
+                      <td class="align-middle text-center" style="font-size: 0.95em; font-style: italic;">Many</td>
+                      <td class="align-middle text-center">72.82</td>
+                      <td class="align-middle text-center">75.01</td>
+                    </tr>
+
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Oct 30, 2025</span>
+                      </td>
+                      <td class="align-middle text-center">Spektr-SQL<br>
+                        <span class="affiliation">Amazon Ads-SpektrBot</span><br><a href="https://www.notion.so/BIRD-Submission-SQL-291e8bf3051480afa7b8cfac3aa26b10" class="paperlink">[Ravi Shankar et al.]</a>
+                      </td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">30B-3B-MoE</td>
+                      <td class="align-middle text-center"
+                        style="font-size: 0.95em; font-style: italic;">
+                      Few
+                    </td>
+                      <td class="align-middle text-center">72.10</td>
+                      <td class="align-middle text-center">74.85</td>
+                    </tr>
 
                     <tr>
                       <td scope="row" class="align-middle text-center counter-cell">
@@ -4060,22 +4273,7 @@
                       <td class="align-middle text-center">74.79</td>
                     </tr>
 
-                    <tr>
-                      <td scope="row" class="align-middle text-center counter-cell">
-                        <span class="badge badge-secondary">Oct 11, 2025</span>
-                      </td>
-                      <td class="align-middle text-center">SiriusAI-Text2SQL-32B<br>
-                        <span class="affiliation">Tencent ML Platform</span><br>
-                      </td>
-                      <td class="align-middle text-center"><a></a></td>
-                      <td class="align-middle text-center">32B</td>
-                      <td class="align-middle text-center"
-    style="font-size: 0.95em; font-style: italic;">
-  Many
-</td>
-                      <td class="align-middle text-center">72.43</td>
-                      <td class="align-middle text-center">74.40</td>
-                    </tr>
+
 
                     <tr>
                       <td scope="row" class="align-middle text-center counter-cell">
@@ -4164,6 +4362,21 @@
 
                       <td class="align-middle text-center">72.00</td>
                     </tr>
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Sep 15, 2025</span>
+                      </td>
+                      <td class="align-middle text-center">ShepherdSQL<br>
+                        <span class="affiliation">JD Bitcircuit Research</span><br>
+                      </td>
+                      <td class="align-middle text-center"><a></a></td>
+                      <td class="align-middle text-center">30B-3B-MoE</td>
+                      <td class="align-middle text-center"
+    style="font-size: 0.95em; font-style: italic;">
+  Many
+                      <td class="align-middle text-center">71.71</td>
+                      <td class="align-middle text-center">71.16</td>
+                    </tr>
 
                     <tr>
                       <td scope="row" class="align-middle text-center counter-cell">
@@ -4198,6 +4411,7 @@
                       <td class="align-middle text-center">70.93</td>
                     </tr>
                     
+
                     <tr>
                       <td scope="row" class="align-middle text-center counter-cell">
                         <span class="badge badge-secondary">Sep 15, 2025</span>
@@ -4213,7 +4427,7 @@
                       <td class="align-middle text-center">-</td>
                       <td class="align-middle text-center">70.71</td>
                     </tr>
-
+                    
                     <tr>
                       <td scope="row" class="align-middle text-center counter-cell">
                         <span class="badge badge-secondary">May 08, 2025</span>
@@ -4246,6 +4460,20 @@
 </td>
                       <td class="align-middle text-center">70.70</td>
                       <td class="align-middle text-center">70.43</td>
+                    </tr>
+
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Feb 21, 2026</span>
+                      </td>
+                      <td class="align-middle text-center">Claude Opus 4.6<br>
+                        <span class="affiliation">Baseline</span>
+                      </td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">UNK</td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" data-tooltip="Evaluated on BIRD Dev 20251106">New Dev</span><br>68.77</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" style="visibility:hidden">New Dev</span><br>70.15</td>
                     </tr>
 
                     <tr>
@@ -4308,6 +4536,34 @@
                     </tr>
 
                     <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Feb 21, 2026</span>
+                      </td>
+                      <td class="align-middle text-center">Qwen3-Coder-480B-A35B<br>
+                        <span class="affiliation">Baseline</span>
+                      </td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">UNK</td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" data-tooltip="Evaluated on BIRD Dev 20251106">New Dev</span><br>66.17</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" style="visibility:hidden">New Dev</span><br>68.14</td>
+                    </tr>
+
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Feb 21, 2026</span>
+                      </td>
+                      <td class="align-middle text-center">Claude 4.5 Sonnet<br>
+                        <span class="affiliation">Baseline</span>
+                      </td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">UNK</td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" data-tooltip="Evaluated on BIRD Dev 20251106">New Dev</span><br>67.34</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" style="visibility:hidden">New Dev</span><br>66.85</td>
+                    </tr>
+
+                    <tr>
                       <td
                         scope="row"
                         class="align-middle text-center counter-cell"
@@ -4355,6 +4611,20 @@
                     </tr>
 
                     <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Feb 21, 2026</span>
+                      </td>
+                      <td class="align-middle text-center">GLM-4.7<br>
+                        <span class="affiliation">Baseline</span>
+                      </td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">UNK</td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" data-tooltip="Evaluated on BIRD Dev 20251106">New Dev</span><br>63.82</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" style="visibility:hidden">New Dev</span><br>62.94</td>
+                    </tr>
+
+                    <tr>
                       <td
                         scope="row"
                         class="align-middle text-center counter-cell"
@@ -4379,7 +4649,22 @@
                       <td class="align-middle text-center">58.50</td>
                       <td class="align-middle text-center">62.66</td>
                     </tr>
-<tr>
+
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Feb 21, 2026</span>
+                      </td>
+                      <td class="align-middle text-center">DeepSeek-R1<br>
+                        <span class="affiliation">Baseline</span>
+                      </td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">UNK</td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" data-tooltip="Evaluated on BIRD Dev 20251106">New Dev</span><br>61.67</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" style="visibility:hidden">New Dev</span><br>60.93</td>
+                    </tr>
+
+                    <tr>
                       <td
                         scope="row"
                         class="align-middle text-center counter-cell"
@@ -4432,6 +4717,20 @@
                       <td class="align-middle text-center"></td>
                       <td class="align-middle text-center">58.47</td>
                       <td class="align-middle text-center">60.37</td>
+                    </tr>
+
+                    <tr>
+                      <td scope="row" class="align-middle text-center counter-cell">
+                        <span class="badge badge-secondary">Feb 21, 2026</span>
+                      </td>
+                      <td class="align-middle text-center">Kimi-K2-Thinking<br>
+                        <span class="affiliation">Baseline</span>
+                      </td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center">UNK</td>
+                      <td class="align-middle text-center"></td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" data-tooltip="Evaluated on BIRD Dev 20251106">New Dev</span><br>60.63</td>
+                      <td class="align-middle text-center"><span class="new-dev-badge" style="visibility:hidden">New Dev</span><br>59.87</td>
                     </tr>
 
                     <tr>
@@ -4875,6 +5174,70 @@
       <script src="./script/clean-blog.min.js"></script>
       <!-- Custom script for leaderboard type toggle -->
       <script src="./script/leaderboard-toggle.min.js"></script>
+
+      <!-- Auto-tag recent submissions with "New Sub" badge in Test column -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var now = new Date();
+          var twoWeeksMs = 14 * 24 * 60 * 60 * 1000;
+
+          var rows = document.querySelectorAll("table.table tbody tr");
+
+          rows.forEach(function (row) {
+            var badge = row.querySelector(".counter-cell .badge.badge-secondary");
+            if (!badge) return;
+
+            var dateText = badge.textContent.trim();
+            var date = new Date(dateText);
+            if (isNaN(date.getTime())) return;
+
+            var diffMs = now.getTime() - date.getTime();
+            if (diffMs < 0 || diffMs > twoWeeksMs) return;
+
+            var cells = row.querySelectorAll("td");
+            var lastCell = cells[cells.length - 1];
+            if (!lastCell) return;
+
+            // Create the visible "New Sub" badge for Test column
+            var newSubBadge = document.createElement("span");
+            newSubBadge.className = "new-sub-badge";
+            newSubBadge.setAttribute("data-tooltip", "Submitted within the last 2 weeks");
+            newSubBadge.textContent = "New Sub";
+
+            // If there is a hidden new-dev-badge placeholder, replace it
+            var hiddenBadge = lastCell.querySelector('.new-dev-badge[style*="visibility"]');
+            if (hiddenBadge) {
+              hiddenBadge.parentNode.replaceChild(newSubBadge, hiddenBadge);
+            } else {
+              var br = document.createElement("br");
+              lastCell.insertBefore(br, lastCell.firstChild);
+              lastCell.insertBefore(newSubBadge, lastCell.firstChild);
+            }
+
+            // For tables with a Dev column, add a hidden badge to Dev for alignment
+            var table = row.closest("table");
+            if (!table) return;
+            var hasDevCol = false;
+            table.querySelectorAll("thead th").forEach(function (th) {
+              if (th.textContent.trim().indexOf("Dev") !== -1) hasDevCol = true;
+            });
+
+            if (hasDevCol && cells.length >= 2) {
+              var devCell = cells[cells.length - 2];
+              // Only add hidden placeholder if Dev cell doesn't already have a badge
+              if (!devCell.querySelector(".new-dev-badge, .new-sub-badge")) {
+                var hiddenSubBadge = document.createElement("span");
+                hiddenSubBadge.className = "new-sub-badge";
+                hiddenSubBadge.style.visibility = "hidden";
+                hiddenSubBadge.textContent = "New Sub";
+                var br2 = document.createElement("br");
+                devCell.insertBefore(br2, devCell.firstChild);
+                devCell.insertBefore(hiddenSubBadge, devCell.firstChild);
+              }
+            }
+          });
+        });
+      </script>
     </div>
   </body>
 </html>
