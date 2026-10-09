@@ -1,4 +1,14 @@
 /* Project news above the introduction and leaderboard. */
+.bird-announcement-wrap { position: relative; }
+.bird-announcement-wrap > .announcement-contribute {
+    position: absolute; top: 12px; right: 20px; z-index: 1;
+    display: inline-block; padding: 4px 12px;
+    border: 1px solid #1f7872; border-radius: 4px;
+    background: #1f7872; color: #fff;
+    font-size: 14px; font-weight: 600; line-height: 24px; text-decoration: none;
+}
+.bird-announcement-wrap > .announcement-contribute:hover { background: #185e59; border-color: #185e59; }
+.bird-announcement-wrap > .announcement-contribute:focus-visible { outline: 2px solid #1f7872; outline-offset: 3px; }
 .bird-announcement {
     margin: 0 0 24px;
     border: 1px solid rgba(31, 120, 114, 0.6);
@@ -11,7 +21,7 @@
 .bird-announcement summary { padding: 16px 20px; cursor: pointer; list-style: none; }
 .bird-announcement summary::-webkit-details-marker { display: none; }
 .bird-announcement summary:focus-visible { outline: 2px solid #1f7872; outline-offset: 3px; border-radius: 5px; }
-.bird-announcement .announcement-date { display: block; margin-bottom: 5px; color: #5b686b; font-size: 12px; }
+.bird-announcement .announcement-date { display: block; min-height: 26px; padding-right: 125px; margin-bottom: 5px; color: #5b686b; font-size: 12px; }
 .bird-announcement .announcement-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
 .bird-announcement .announcement-title { font-size: 18px; font-weight: 600; }
 .bird-announcement .announcement-icon { margin-right: 6px; vertical-align: text-bottom; }
@@ -38,6 +48,7 @@
 .bird-announcement .announcement-contact a { color: #1f7872; text-decoration: underline; text-underline-offset: 3px; }
 .bird-announcement .announcement-body .announcement-thanks { font-size: 16px; }
 @media (max-width: 575px) {
+    .bird-announcement-wrap > .announcement-contribute { top: 10px; right: 14px; }
     .bird-announcement summary, .bird-announcement .announcement-body { padding: 14px; }
     .bird-announcement .announcement-title { font-size: 16px; }
     .bird-announcement .announcement-project { padding: 12px; }
