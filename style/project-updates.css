@@ -1,0 +1,55 @@
+/* Pinned project announcement in News, above the historical news scroller. */
+.announcement-contribute { display: flex; flex-direction: column; gap: 3px; white-space: normal; border: 2px solid #155e59; box-shadow: 0 0 0 3px rgba(31, 120, 114, 0.12); }
+#button-group .announcement-contribute { font-size: 17px; font-weight: 700; }
+.announcement-contribute .contribute-projects { font-size: 14px; font-weight: 600; line-height: 1.5; }
+.announcement-contribute:hover { background: #185e59; color: #fff; }
+.announcement-contribute:focus-visible { outline: 2px solid #1f7872; outline-offset: 3px; }
+.bird-announcement {
+    margin: 10px 0 16px;
+    border: 1px solid rgba(31, 120, 114, 0.6);
+    border-radius: 5px;
+    background: #eef9f8;
+    box-shadow: 0 0 0 3px rgba(31, 120, 114, 0.06), 0 0 20px rgba(31, 120, 114, 0.1);
+    color: #343a40;
+    line-height: 1.6;
+}
+.bird-announcement summary { padding: 14px; cursor: pointer; list-style: none; }
+.bird-announcement summary::-webkit-details-marker { display: none; }
+.bird-announcement summary:focus-visible { outline: 2px solid #1f7872; outline-offset: 3px; border-radius: 5px; }
+.bird-announcement .announcement-footer { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; margin-top: 6px; }
+.bird-announcement .announcement-date { margin-left: auto; color: #5b686b; font-size: 12px; text-align: right; }
+.bird-announcement .announcement-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.bird-announcement .announcement-title { font-size: 16px; font-weight: 600; }
+.bird-announcement .announcement-icon { margin-right: 6px; vertical-align: text-bottom; }
+.bird-announcement .announcement-chevron { flex-shrink: 0; color: #1f7872; }
+.bird-announcement[open] .announcement-chevron { transform: rotate(180deg); }
+.bird-announcement .announcement-preview { display: block; margin-top: 6px; font-size: 14px; }
+.bird-announcement .project-livesqlbench { color: #35689c; }
+.bird-announcement .project-bird { color: #77529c; }
+.bird-announcement .project-dii { color: #1f7872; }
+.bird-announcement .announcement-toggle {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 14px; line-height: 24px; vertical-align: baseline;
+}
+.bird-announcement summary:hover .announcement-toggle { color: #185e59; }
+.bird-announcement .announcement-read-more,
+.bird-announcement .announcement-show-less { color: #1f7872; font-weight: 600; white-space: nowrap; text-decoration: underline; text-underline-offset: 3px; }
+.bird-announcement .announcement-show-less { display: none; }
+.bird-announcement[open] .announcement-read-more { display: none; }
+.bird-announcement[open] .announcement-show-less { display: inline; }
+.bird-announcement .announcement-body { padding: 14px; border-top: 1px solid #c8dedb; border-radius: 0 0 5px 5px; background: #fff; }
+.bird-announcement .announcement-body p { margin: 0; font-size: 15px; line-height: 1.7; }
+.bird-announcement .announcement-body > p + p { margin-top: 12px; }
+.bird-announcement .announcement-projects { display: grid; gap: 12px; margin: 16px 0; }
+.bird-announcement .announcement-project { padding: 16px; border: 1px solid #dee5e7; border-radius: 4px; }
+.bird-announcement .announcement-project-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px; margin-bottom: 6px; }
+#main .bird-announcement h3 { margin: 0; font-size: 17px; font-weight: 600; }
+.bird-announcement .announcement-status { color: #5b686b; font-size: 12px; }
+.bird-announcement .announcement-contact { font-weight: 600; }
+.bird-announcement .announcement-contact a { color: #1f7872; text-decoration: underline; text-underline-offset: 3px; }
+.bird-announcement .announcement-body .announcement-thanks { font-size: 16px; }
+@media (max-width: 575px) {
+    .bird-announcement summary, .bird-announcement .announcement-body { padding: 14px; }
+    .bird-announcement .announcement-title { font-size: 16px; }
+    .bird-announcement .announcement-project { padding: 12px; }
+}
