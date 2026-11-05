@@ -1,0 +1,123 @@
+.mini-dev-leaderboards {
+    margin-bottom: 18px;
+}
+
+.mini-dev-current .table-wrapper {
+    overflow-x: auto;
+}
+
+#mini-dev-current-table {
+    width: 100%;
+    min-width: 510px;
+    margin: 0;
+    font-variant-numeric: tabular-nums;
+}
+
+#mini-dev-current-table thead th {
+    border-top: 0;
+    white-space: nowrap;
+}
+
+#mini-dev-current-table th,
+#mini-dev-current-table td {
+    padding: 0.65rem 0.4rem;
+    vertical-align: middle;
+}
+
+#mini-dev-current-table tbody th {
+    font-weight: 400;
+}
+
+#mini-dev-current-table thead th:nth-child(n + 3),
+#mini-dev-current-table td {
+    text-align: right;
+}
+
+#mini-dev-current-table th:nth-child(2),
+#mini-dev-current-table th:first-child,
+#mini-dev-current-table .mini-dev-rank {
+    text-align: center;
+}
+
+#mini-dev-current-table .mini-dev-rank {
+    width: 2.5rem;
+}
+
+#mini-dev-current-table .mini-dev-vendor {
+    display: block;
+    margin-top: 3px;
+}
+
+#mini-dev-current-table .mini-dev-upper-bound strong {
+    font-weight: 700;
+}
+
+.mini-dev-legacy {
+    margin-top: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.mini-dev-legacy > summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    list-style: none;
+    color: #3e4b56;
+    background: #f7f8f9;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.mini-dev-legacy > summary::-webkit-details-marker {
+    display: none;
+}
+
+.mini-dev-legacy > summary::before {
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    content: "";
+    transform: rotate(-45deg);
+    transition: transform 0.15s ease;
+}
+
+.mini-dev-legacy[open] > summary::before {
+    transform: rotate(45deg);
+}
+
+.mini-dev-legacy[open] > summary {
+    border-bottom: 1px solid #ced4da;
+    border-radius: 4px 4px 0 0;
+}
+
+.mini-dev-legacy > summary:hover {
+    color: #117a8b;
+    background: #f0f5f7;
+}
+
+.mini-dev-legacy > summary:focus-visible {
+    outline: 2px solid #17a2b8;
+    outline-offset: 3px;
+}
+
+.mini-dev-legacy-body {
+    padding: 14px 10px 2px;
+}
+
+.mini-dev-legacy-note {
+    margin: 0 6px 12px;
+    color: #687582;
+    font-size: 0.8rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mini-dev-legacy > summary::before {
+        transition: none;
+    }
+}
