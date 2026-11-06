@@ -40,7 +40,11 @@
 }
 
 #mini-dev-current-table .mini-dev-rank {
-    width: 2.5rem;
+    width: 1%;
+}
+
+#mini-dev-current-table .mini-dev-rank .badge {
+    display: block;
 }
 
 #mini-dev-current-table .mini-dev-vendor {
