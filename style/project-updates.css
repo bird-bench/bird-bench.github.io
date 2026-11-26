@@ -45,6 +45,8 @@
 .bird-announcement .announcement-project-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px; margin-bottom: 6px; }
 #main .bird-announcement h3 { margin: 0; font-size: 17px; font-weight: 600; }
 .bird-announcement .announcement-status { color: #5b686b; font-size: 12px; }
+.bird-announcement .announcement-status.is-released { color: #1f7872; font-weight: 700; }
+.bird-announcement code { font-size: 0.9em; padding: 1px 4px; border-radius: 4px; background: #eef2f3; color: inherit; }
 .bird-announcement .announcement-contact { font-weight: 600; }
 .bird-announcement .announcement-contact a { color: #1f7872; text-decoration: underline; text-underline-offset: 3px; }
 .bird-announcement .announcement-body .announcement-thanks { font-size: 16px; }
